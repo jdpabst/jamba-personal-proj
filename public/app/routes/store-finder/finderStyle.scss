@@ -1,27 +1,62 @@
 .main_finder_container {
     width: 100%;
     position: relative;
+    border-top: 2px solid lightgray;
     .finder_text_one {
         color: #572700;
-        font-weight: bold;
+        // font-weight: bold;
+        font-family: 'Kreon', serif;
+        letter-spacing: 2px;
+        font-size: 46px;
+        position: absolute;
+        top: 10px;
+        left: 16%; 
     }
     input {
-
+        height: 46px;
+        width: 228px;
+        position: absolute;
+        top: 69px;
+        left: 20%;
     }
     .search_bttn {
-        height: 50px;
+        height: 47px;
         width: 41px;
         background: #f58024;
         border-radius: 2px;
+        position: absolute;
+        margin-top: 70px;
+        right: 14%;
+        img{
+            margin-top: 14px;
+            margin-left: 9px;
+            height: 20px;
+        }
     }
     .finder_text_two{
         color: #572700;
-        
+        font-family: 'Kreon', serif;
+        letter-spacing: 1px;
+        font-size: 15px;
+        // position: absolute;
+        // top: 129px;
+        // left: 34%;
+        margin-top: 129px;
+        margin-left: 34%;
+    }
+    .finder_locations{
+        color: #572700;
+        font-family: 'Kreon', serif;
+        letter-spacing: 1px;
+        font-size: 17px;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-bottom: 0;
     }
     .map {
         width: 97%;
         overflow: hidden;
-        padding: 15px;
+        padding: 5px 15px 35px 15px;
     }
     .finder_order{
         width: 100%;

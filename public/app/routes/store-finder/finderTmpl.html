@@ -1,8 +1,9 @@
 <section class="main_finder_container">
     <h1 class="finder_text_one">FIND A STORE</h1>
-    <input type="text">
-    <div class="search_bttn"><img src=""></div>
+    <input type="text" ng-model="zipcode">
+    <div class="search_bttn" ui-sref="map({ zip: zipcode })"><img src="./img/searchMOBILE.png"></div>
     <p class="finder_text_two">International Locations</p>
+    <p class="finder_locations">Locations</p>
 <div class="map">
     <iframe
         width="414"

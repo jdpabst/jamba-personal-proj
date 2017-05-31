@@ -1,0 +1,16 @@
+<section class="main_menu_section">
+    <div class="menu_paragraph">
+        <h1><span style="font-family: 'Cabin Sketch', cursive; font-size: 60px">our </span><span style="font-family: 'Roboto Slab', serif; font-size: 40px;">MENU</span></h1>
+        </br>
+        <p>WE BELIEVE A LITTLE DOSE OF REALITY IS <span style="font-family: 'Teko', sans-serif; font-size: 22px;">GOOD FOR YOU</span>. THAT'S WHY WE ONLY USE <span style="font-family: 'Teko', sans-serif; font-size: 22px;">REAL WHOLE FRUIT AND VEGGIES</span> AND FRUIT </br> JUICES, AND <span style="font-family: 'Teko', sans-serif; font-size: 22px;">WHOLESOME</span></br> INGREDIENTS. KEEP IT REAL. AND ENJOY.</p>
+    </div>
+
+    <div class="menu_div">
+        <div class="menu_items" ng-repeat="item in menu"><img src="{{item.menupic}}" class="menu_pics">
+            <div class="menu_items_name">{{item.menuitem}}</div>
+                <div class="menu_see_bttn">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+        </div>    
+    </div>
+</section>

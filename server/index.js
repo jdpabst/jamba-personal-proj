@@ -13,13 +13,13 @@ let massiveInstance = massive.connectSync({
 
 app.set('db', massiveInstance);
 let db = app.get('db');
-let menuCtrl = require('./controllers/menuCtrl');
+let mainCtrl = require('./controllers/mainDbCtrl.js');
 
 
-app.get('/api/menu', menuCtrl.getMenu);
-app.get('/api/menu/smoothies', menuCtrl.getSmoothies);
-app.get('/api/menu/smoothies/fnv', menuCtrl.getFnv);
-app.get('/api/menu/smoothies/fnv/beet', menuCtrl.getBeet);
+app.get('/api/menu', mainCtrl.getMenu);
+app.get('/api/menu/smoothies', mainCtrl.getSmoothies);
+app.get('/api/menu/smoothies/fnv', mainCtrl.getFnv);
+app.get('/api/menu/smoothies/fnv/beet', mainCtrl.getBeet);
 
 
 
