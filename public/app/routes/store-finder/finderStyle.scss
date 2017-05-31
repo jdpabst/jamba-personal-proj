@@ -1,0 +1,34 @@
+.main_finder_container {
+    width: 100%;
+    position: relative;
+    .finder_text_one {
+        color: #572700;
+        font-weight: bold;
+    }
+    input {
+
+    }
+    .search_bttn {
+        height: 50px;
+        width: 41px;
+        background: #f58024;
+        border-radius: 2px;
+    }
+    .finder_text_two{
+        color: #572700;
+        
+    }
+    .map {
+        width: 97%;
+        overflow: hidden;
+        padding: 15px;
+    }
+    .finder_order{
+        width: 100%;
+        img {
+            height: 85px;
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

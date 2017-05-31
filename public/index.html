@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Kreon:300|Krona+One|Roboto+Slab:300|Teko:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Cabin+Sketch|Cedarville+Cursive|Cormorant+SC|Niconne|Pompiere|Reenie+Beanie|Stalemate" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bundle.css">
+    <script src="https://use.fontawesome.com/ed099df7df.js"></script>
+    <title>Jamba Juice</title>
+</head>
+<body>
+    <header>
+        
+     <!--///////////////////////////////////////MOBILE///////////////////////////////////////////////////-->
+        <div class="mobile_nav" ng-controller="headerCtrl">
+            <img class="main_title" src="./img/JambaLogo_mobile.png">
+            <img class="location_icon" src="./img/mobile_nav-findStorePin.png">
+            <div class="mobile_order_bttn">
+                <p class="bttn_text">ORDER </br> NOW!</p>
+            </div>
+            <img class="hamburger" src="./img/PullDown.png">
+        </div>
+        <div class="mobile_menu_dropdown">
+        <input type="text" class="home_site_search" placeholder="Site Search">
+        <div class="home_site_search_bttn"><img src="./img/searchMOBILE.png"></div>
+        <div class="home_menu"><div class="home_dropmenu_words">Menu & Nutrition</div> <img src="./img/subNav-BG.png"></div>
+        <div class="home_blend"><div class="home_dropmenu_words">Blend In The Good</div> <img src="./img/subNav-BG.png"></div>
+        <div class="home_more"><div class="home_dropmenu_words">More Jamba</div> <img src="./img/subNav-BG.png"></div>
+        <div class="home_insider"><div class="home_dropmenu_words">Be A Jamba Insider</div></div>
+    </div>
+
+        
+     <!--///////////////////////////////////////MOBILE///////////////////////////////////////////////////-->
+     <!--///////////////////////////////////////DESKTOP//////////////////////////////////////////////////////-->
+        <!--<div class="desktop_nav">
+            <img class="main_title" src="./app/img/jambaJuiceLogo.jpg">
+            <ul>
+                <li class="menu">Menu</li>
+                <li class="blend">Blend in the Good</li>
+                <li class="more">More Jamba</li>
+                <li class="finder">Find a Store</li>
+            </ul>
+            <input type="text" placeholder="Site Search" class="search"/>
+
+            <div class="order_bttn">
+                <p>Order Now!</p>
+            </div>
+        </div>-->
+     <!--///////////////////////////////////////DESKTOP//////////////////////////////////////////////////////-->
+
+
+
+    </header>
+
+
+
+    <ui-view></ui-view>
+
+<footer>
+    <div class="mobile_footer">
+        <div>
+        <p>Menu & Nutrition</p>
+        <ul class="menu_nutrition">
+            <li>Menu</li>
+            <li>Energy Bowls</li>
+            <li>Shots</li>
+            <li>Smoothies</li>
+            <li>Juices</li>
+            <li>Tasty Bites</li>
+            <li>Jamba Kids</li>
+            <li>Boosts</li>
+        </ul>
+        </div>
+
+        <div>
+        <p>Blend in the Good</p>
+        <ul class="blend">
+            <li>About Jamba</li>
+            <li>Super Blend Smoothies</li>
+            <li>Jamba Insider Rewards</li>
+            <li>Jamba Kids</li>
+            <li>Make it Real</li>
+            <li>The Power of Juice</li>
+            <li>Team Up for a Healthy America</li>
+        </ul>
+        </div>
+
+        <div>
+        <p>Jamba Kids</p>
+        <ul class="kids">
+            <li>Adventure Blender</li>
+            <li>Parents</li>
+            <li>Play Zone</li>
+        </ul>
+        </div>
+
+        <div>
+        <p>Jamba Juice Insider Rewards</p>
+        <div class="rewards">
+            <h2>Sign up for rewards, news, special offers and more. Learn more ...</h2>
+        </div>
+        </div>
+
+        <div>
+        <p>Connect With Jamba</p>
+        <ul class="connect">
+            <li>Contact Us</li>
+            <li>Careers</li>
+            <li>Join Our Research Panel</li>
+            <li><img src="./img/map.jpg">Find a Store</li>
+            <li><img src="./img/fb.jpg">Facebook</li>
+            <li><img src="./img/twitter.png">Twitter</li>
+            <li><img src="./img/pinterest.png">Pinterest</li>
+            <li><img src="./img/tv.png">Jamba Juice TV</li>
+            <li><img src="./img/insta.png">Instagram</li>
+        </ul>
+        </div>
+
+        <div>
+        <p>More Jamba</p>
+        <ul class="more">
+            <li>Jamba Goods</li>
+            <li>Jamba Gift Cards</li>
+            <li>Catering</li>
+            <li>Fundraising</li>
+        </ul>
+        </div>
+
+        <div>
+        <p>Company Info</p>
+        <ul class="company_info">
+            <li>Franchise Opportunities</li>
+            <li>International Locations</li>
+            <li>Press Kits</li>
+            <li>Investor Relations</li>
+            <li>Legal</li>
+            <li>Insurance</li>
+            <li>Privacy</li>
+        </ul>
+        </div>
+    </div>
+    
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+<script src="./bundle.js"></script>
+</body>
+</html>

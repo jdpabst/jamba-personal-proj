@@ -1,0 +1,103 @@
+<section class="home_main_container" ng-controller="headerCtrl">
+
+    <!--/////////////////////////MOBILE HOME//////////////////////////////-->
+
+    <div class="home_main_carousel">
+        <ul>
+            <li><img src="./img/pink.jpg"></li>
+            <li><img src="./img/yellow.pdf"></li>
+            <li><img src="./img/green.jpg"></li>
+            <li><img src="./img/blue.jpg"></li>
+        </ul>
+        <div id="prev"><img class ="prev" src="./img/carousel-controls.png"></div>
+        <div id="next"><img class="next" src="./img/carousel-controls.png"></div>
+    </div>
+
+    <div class="home_paragraph_one">
+        <p class="part_one">INTRODUCING WHOLE FOOD INGREDIENTS</p>
+        <p class="part_two">WITH A WHOLE LOT OF GOODNESS</p>
+        <div id="home_green_chevron"><img src="./img/chevron-down.jpg"></div>
+    </div>
+
+    <div class="home_food_carousel">
+        <ul>
+            <!--//////PINEAPPLE///////////////-->
+            <li>
+                <div>
+                    <img src="./img/meet-pataya.jpg">
+                    <div class="white_line_left"></div>
+                    <p class="meet">meet</p>
+                    <div class="white_line_right"></div>
+                    <p>pataya</p>
+                </div>
+            </li>
+            <!--///////////////LEMON////////////-->
+            <li>
+                <div>
+                    <img src="./img/meet-lemon.jpg">
+                    <div class="white_line_left"></div>
+                    <p class="meet">meet</p>
+                    <div class="white_line_right"></div>
+                    <p>lemon</p>
+                <div>
+            </li>
+            <!--////////////CARROT///////////////-->
+            <li>
+                <div>
+                    <img src="./img/meet-carrots.jpg">
+                    <div class="white_line_left"></div>
+                    <p class="meet">meet</p>
+                    <div class="white_line_right"></div>
+                    <p>carrot</p>
+                </div>
+            </li>
+        </ul>
+        <div id="food_prev"><img class ="food_prev" src="./img/white-arrow.png"></div>
+        <div id="food_next"><img class="food_next" src="./img/white-arrow.png"></div>
+    </div>
+
+    <div class="soccer">
+        <p><img  class ="soccer_words" src="./img/EnergyHomePage_Headline.png"></p>
+        <p><img class="soccer_img" src="./img/mobile_energy_img.jpg"></p>
+        <div class="soccer_bttn">
+            <div class="soccer_line_one"> POWER UP </div>
+            <div class="soccer_line_two">HERE</div>
+            <div class="soccer_arrow"><img src="./img/__Button_arrow.png"></div>
+        </div>
+    </div>
+
+    <div class="paragraph_two">
+        <p id="part_one">delicious and nutritious</p> 
+        <p id="part_two">MEET OUR ENGERGETIC LINEUP</p>
+    </div>
+
+    <div class="product_carousel">
+        <ul>
+            <li><img src="./img/PitayaBowl.jpg"><div><p>Island Pitaya Bowl</p></div></li>
+            <li><img src="./img/TropicalGreens.jpg"><div><p>Tropical Green Juice</p></div></li>
+            <li><img src="./img/AcaiSuperfood.jpg"><div><p>Acai Super Antioxidant Smoothie</p></div></li>
+            <li><img src="./img/CitrusKick.jpg"><div><p>Citrus Kick Juice</p></div></li>
+            <li><img src="./img/KaleribbeanBreeze.jpg"><div><p>Kale-ribbean Breeze Smoothie</p></div></li>
+            <li><img src="./img/ChunkyStrawberryBowl.jpg"><div><p>Chunky Strawberry Bowl</p></div></li>
+            <li><img src="./img/VeggieVitality.jpg"><div><p>Veggie Vitality Juice</p></div></li>
+            <li><img src="./img/Cookies-n-creme.jpg"><div><p>Cookies 'n Creme Protein Smoothie</p></div></li>
+            <li><img src="./img/Peanut-butter-banana.jpg"><div><p>PB & Banana Protein Smoothie</p></div></li>
+        </ul>
+        <div id="product_prev"><img class ="product_prev" src="./img/carousel-controls.png"></div>
+        <div id="product_next"><img class="product_next" src="./img/carousel-controls.png"></div>
+    </div>
+
+    <div class="store_finder">
+        <img src="./img/flex-box-left.jpg">
+        <p class="store_finder_text_one">STORE FINDER</p>
+        <p class="store_finder_text_two">Find a Jamba Juice near you!</p>
+        <input type="text" ng-model="zipcode" placeholder="Enter Zip Code"/>
+        <div class="store_finder_go_bttn" ui-sref="map({ zip: zipcode })">GO</div>
+    </div>
+
+    <div class="order_ahead">
+        <img src="./img/HomePageTile.jpg">
+    </div>
+
+
+</section>
