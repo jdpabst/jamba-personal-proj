@@ -19,8 +19,8 @@ angular.module('app', ['ui.router'])
         })
         .state('smoothies', {
             url: '/smoothies',
-            templateUrl: './app/routes/smoothies/smoothiesTmpl.html',
-            controller: 'smoothiesCtrl'
+            templateUrl: './app/routes/smoothies/smoothieTmpl.html',
+            controller: 'smoothieCtrl'
         })
         .state('fruitnveg', {
             url:'fruitnveg', 

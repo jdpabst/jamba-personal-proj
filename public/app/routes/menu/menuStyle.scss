@@ -25,26 +25,28 @@
         margin-left: 20px;
         box-sizing: border-box;
         padding-bottom: 20px;
+        font-family: 'Roboto Slab', serif; font-size: 40px;
 
-        .menu_items {
-            min-height: 195px;
-            color:#572700;
+    .menu_items_juice{
+            min-height: 245px;
+            color:#c1d72f;
             border-top: 0.5px solid #E6E6E6;
             position: relative;
 
             .menu_items_name{
-                border: 1px solid pink;
+                // border: 1px solid pink;
                 width: 196px;
                 // position: absolute;
-                margin-top: 29px;
+                margin-top: -122px;
                 margin-left: 142px;
-                font-size: 41px;
+                font-size: 35px;
+                
             }
             .menu_see_bttn{
                 height: 38px;
                 width: 151px;
                 border-radius: 3px;
-                background: pink;
+                background: #c1d72f;
                 position: relative;
                 margin-top: 16px;
                 margin-left: 139px;
@@ -55,6 +57,7 @@
                     position: absolute;
                     top: 10px;
                     right: 66px;
+                    font-size: 16px;
                 }
                 
                 .menu_bttn_img{
@@ -69,12 +72,121 @@
             .menu_pics{
                 height: 120px;
                 width: 120px;
-                position: absolute;
-                left: 10px;
-                top: 30px;
+                position: relative;
+                margin-left: 10px;
+                margin-top: 30px;
             }
 
 
+    }
+
+        .menu_items {
+            min-height: 195px;
+            border-top: 0.5px solid #E6E6E6;
+            position: relative;
+
+                #bowl_name{
+                    color:#f58025;
+
+                }
+                #bowl_bttn{
+                    background: #f58025;
+                }
+            
+                
+                #shots_name{
+                    color:#c60c48;
+
+                }
+                #shots_bttn{
+                    background: #c60c48;
+                }
+
+                #menu_smoothies_name{
+                    color:#4aa942;
+
+                }
+                #smoothies_bttn{
+                    background: #4aa942;
+                }
+
+                #bites_name{
+                    color:#f15d22;
+
+                }
+                #bites_bttn{
+                    background: #f15d22;
+                }
+
+                #kids_name{
+                    color:#7c003f;
+
+                }
+                #kids_bttn{
+                    background: #7c003f;
+                }
+
+                #boosts_name{
+                    color:#f15d22;
+
+                }
+                #boosts_bttn{
+                    background: #f15d22;
+                }
+            .menu_items_name{
+                // border: 1px solid pink;
+                width: 196px;
+                // position: absolute;
+                margin-top: -122px;
+                margin-left: 142px;
+                font-size: 35px;
+                
+            }
+            .menu_see_bttn{
+                height: 38px;
+                width: 151px;
+                border-radius: 3px;
+                position: relative;
+                margin-top: 16px;
+                margin-left: 139px;
+    
+                .menu_see_words{
+                    color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 10px;
+                    right: 66px;
+                    font-size: 16px;
+                }
+                
+                .menu_bttn_img{
+                    height: 21px;
+                    width: 30px;
+                    position: absolute;
+                    right: 16px;
+                    top: 6px;
+
+                }
+            }
+            .menu_pics{
+                height: 120px;
+                width: 120px;
+                position: relative;
+                margin-left: 10px;
+                margin-top: 30px;
+            }
+
+
+        }
+    }
+
+    .menu_order{
+        width: 100%;
+        margin-top: 96px;
+        img {
+            height: 85px;
+            width: 100%;
+            padding: 0;
         }
     }
     

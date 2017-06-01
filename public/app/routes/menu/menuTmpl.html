@@ -1,4 +1,4 @@
-<section class="main_menu_section">
+<section class="main_menu_section" ng-controller="menuCtrl">
     <div class="menu_paragraph">
         <h1><span style="font-family: 'Cabin Sketch', cursive; font-size: 60px">our </span><span style="font-family: 'Roboto Slab', serif; font-size: 40px;">MENU</span></h1>
         </br>
@@ -6,11 +6,65 @@
     </div>
 
     <div class="menu_div">
-        <div class="menu_items" ng-repeat="item in menu"><img src="{{item.menupic}}" class="menu_pics">
-            <div class="menu_items_name">{{item.menuitem}}</div>
+        <div class="menu_items">
+            <img ng-src="{{energyBowls.menupic}}" class="menu_pics" id ="bowl_pic">
+            <div class="menu_items_name" id="bowl_name">{{energyBowls.menuitem}}</div>
+                <div class="menu_see_bttn" id="bowl_bttn">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////////////-->
+        <div class="menu_items">
+            <img ng-src="{{shots.menupic}}" class="menu_pics" id ="shots_pic">
+            <div class="menu_items_name" id="shots_name">{{shots.menuitem}}</div>
+                <div class="menu_see_bttn" id="shots_bttn">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+        </div>
+<!--///////////////////////////////////////////////////////////////-->
+        <div class="menu_items">
+            <img ng-src="{{smoothies.menupic}}" class="menu_pics" id ="menu_smoothie_pic">
+            <div class="menu_items_name" id="menu_smoothies_name">{{smoothies.menuitem}}</div>
+                <div class="menu_see_bttn"id="smoothies_bttn" ui-sref="smoothies">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+        </div>
+<!--///////////////////////////////////////////////////////////////-->
+        <div class="menu_items_juice">
+            <img ng-src="{{juices.menupic}}" class="menu_pics" id ="juices_pic">
+            <div class="menu_items_name" id="juices_name">{{juices.menuitem}}</div>
                 <div class="menu_see_bttn">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+        </div>
+<!--///////////////////////////////////////////////////////////////-->
+        <div class="menu_items">
+            <img ng-src="{{bites.menupic}}" class="menu_pics" id ="bites_pic">
+            <div class="menu_items_name" id="bites_name"><span style="font-family: 'Cabin Sketch', cursive; font-size: 37px">Tasty</span> Bites</div>
+                <div class="menu_see_bttn" id="bites_bttn">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+        </div>
+<!--///////////////////////////////////////////////////////////////-->
+        <div class="menu_items">
+            <img ng-src="{{kids.menupic}}" class="menu_pics" id ="kids_pic">
+            <div class="menu_items_name" id="kids_name">{{kids.menuitem}}</div>
+                <div class="menu_see_bttn" id="kids_bttn">
+                    <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+        </div>
+<!--///////////////////////////////////////////////////////////////-->
+        <div class="menu_items">
+            <img ng-src="{{boosts.menupic}}" class="menu_pics" id ="boosts_pic">
+            <div class="menu_items_name" id="boosts_name">{{boosts.menuitem}}</div>
+                <div class="menu_see_bttn" id="boosts_bttn">
                     <div class="menu_see_words">SEE ALL</div> <img class="menu_bttn_img" src="./img/__Button_arrow.png">
                 </div>
         </div>    
     </div>
+
+<div class="menu_order">
+    <img src="./img/JAJ_order_ahead_jambaism.jpg">
+</div>
+
 </section>
