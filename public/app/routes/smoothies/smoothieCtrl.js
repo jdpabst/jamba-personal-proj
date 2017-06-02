@@ -3,7 +3,7 @@ angular.module('app').controller("smoothieCtrl", function($scope, smoothieServic
     $scope.getAllSmoothies = function(){
         smoothieService.getAllSmoothies().then(function(res){
             console.log(res);
-            var arr = res.data;
+            let arr = res.data;
 
             for(var i = 0; i < arr.length; i++){
                 if(arr[i].id === 1){
@@ -20,9 +20,9 @@ angular.module('app').controller("smoothieCtrl", function($scope, smoothieServic
                 $scope.protein = arr[i]
             } else if (arr[i].id === 7){
                 $scope.fruitnveg = arr[i]
-            } else if (arr[i].id === 7){
-                $scope.boosted = arr[i]
             } else if (arr[i].id === 8){
+                $scope.boosted = arr[i]
+            } else if (arr[i].id === 9){
                 $scope.creamyTreats = arr[i]
                 }
             }

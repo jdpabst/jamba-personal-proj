@@ -1,0 +1,226 @@
+.main_smoothie_section{
+    width: 100%;
+    background: white;
+    position: relative;
+
+    .smoothie_main_paragraph{
+        color:#572700;;
+        text-align: center;
+        width: 97%;
+        // border: 2px solid hotpink;
+        margin-left: 2%;
+        margin-bottom: 33px;
+        margin-top: 44px;
+        .smoothie_header{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .smoothie_paragraph{
+            font-size: 15px;
+            line-height: 31px;
+        }
+    }
+
+    .main_smoothie_div{
+        width: 90%;
+        margin-left: 5%;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        font-family: 'Roboto Slab', serif;
+
+        .smoothie_items_longer{
+            min-height: 231px;
+        //    color: lightseagreen;
+           border-top: 0.5px solid #E6E6E6;
+           position: relative;
+
+                #wholeFood_name{
+                    color:#c1d72f;
+
+                }
+                #wholeFood_bttn{
+                    background: #c1d72f;
+                }
+                #boosted_name{
+                    color:#c60c48;
+
+                }
+                #boosted_bttn{
+                    background: #c60c48;
+                }
+                .smoothie_name {
+                // border: 1px solid pink;
+                width: 196px;
+                // position: absolute;
+                margin-top: -122px;
+                margin-left: 142px;
+                font-size: 35px;   
+           }
+
+           .smoothie_see_bttn{
+               height: 38px;
+                width: 151px;
+                border-radius: 3px;
+                // background: lightseagreen;
+                position: relative;
+                margin-top: 16px;
+                margin-left: 139px;
+           }
+           .smoothie_see_words{
+                    color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 10px;
+                    right: 66px;
+                    font-size: 16px;
+                }
+                
+                .smoothie_bttn_img{
+                    height: 21px;
+                    width: 30px;
+                    position: absolute;
+                    right: 16px;
+                    top: 6px;
+
+                }
+
+            .smoothie_pics{
+               height: 120px;
+                width: 120px;
+                position: relative;
+                // margin-left: 10px;
+                margin-top: 30px;
+           }
+        }
+        .smoothie_items{
+           min-height: 205px;
+        //    color: lightseagreen;
+           border-top: 0.5px solid #E6E6E6;
+           position: relative; 
+           
+                #superblend_name{
+                    color:#f58025;
+
+                }
+                #superblend_bttn{
+                    background: #f58025;
+                }
+            
+                
+                #classic_name{
+                    color:#c60c48;
+
+                }
+                #classic_bttn{
+                    background: #c60c48;
+                }
+
+                #watermelon_name{
+                    color:#4aa942;
+
+                }
+                #watermelon_bttn{
+                    background: #4aa942;
+                }
+                
+                #allFruit_name{
+                    color:#f15d22;
+
+                }
+                #allFruit_bttn{
+                    background: #f15d22;
+                }
+
+                #protein_name{
+                    color:#7c003f;
+
+                }
+                #protein_bttn{
+                    background: #7c003f;
+                }
+
+                #fruitnveg_name{
+                    color:#f15d22;
+
+                }
+                #fruitnveg_bttn{
+                    background: #f15d22;
+                }
+
+                #creamyTreats_name{
+                    color:#4aa942;
+
+                }
+                #creamyTreats_bttn{
+                    background: #4aa942;
+                }
+
+           .smoothie_name {
+                // border: 1px solid pink;
+                width: 196px;
+                // position: absolute;
+                margin-top: -122px;
+                margin-left: 142px;
+                font-size: 35px;   
+           }
+
+           .smoothie_see_bttn{
+               height: 38px;
+                width: 151px;
+                border-radius: 3px;
+                background: lightseagreen;
+                position: relative;
+                margin-top: 16px;
+                margin-left: 139px;
+           }
+           .smoothie_see_words{
+                    color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 10px;
+                    right: 66px;
+                    font-size: 16px;
+                }
+                
+                .smoothie_bttn_img{
+                    height: 21px;
+                    width: 30px;
+                    position: absolute;
+                    right: 16px;
+                    top: 6px;
+
+                }
+           .smoothie_pics{
+               height: 120px;
+                width: 120px;
+                position: relative;
+                // margin-left: 10px;
+                margin-top: 30px;
+           }
+        }
+    }
+    
+
+
+
+
+
+
+// ////SMOOTHIE ORDER//////////////////////////////////////
+.smoothie_order{
+        width: 100%;
+        margin-top: 96px;
+        img {
+            height: 85px;
+            width: 100%;
+            padding: 0;
+        }
+}
+
+}
+
+
+
+
+
+

@@ -1,6 +1,86 @@
-<div class="main_smoothie_section">
+<section class="main_smoothie_section" ng-controller="smoothieCtrl">
     <div class="smoothie_main_paragraph">
         <h1 class="smoothie_header">SMOOTHIES</h1>
-        <p class="smoothie_paragraph">MADE WITH INGREDIENTS SO CLASS, THESE BLENDED-TO-ORDER MASTERPIECES PRACTICALLY INVENTED SMOOTHIES. ALL OF YOUR FAVORITES ARE IN THE MIX: REAL WHOLE FRUIT AND 100% FRUIT JUICE</p>
+        <p class="smoothie_paragraph">MADE WITH INGREDIENTS SO CLASSIC, THESE <span style="font-family: 'Teko', sans-serif; font-size: 22px;">BLENDED-TO-ORDER</span> MASTERPIECES </br>PRACTICALLY INVENTED SMOOTHIES. ALL OF YOUR FAVORITES ARE IN THE MIX: <span style="font-family: 'Teko', sans-serif; font-size: 22px;">REAL WHOLE FRUIT</span></br> AND <span style="font-family: 'Teko', sans-serif; font-size: 22px;">100% FRUIT JUICE</span></p>
     </div>
+<!--/////////////SMOOTHIES////////////////////////////////-->
+    <div class="main_smoothie_div">
+        <div class="smoothie_items">
+            <img ng-src="{{superBlend.smoothiepic}}" class="smoothie_pics" id ="superblend_pic">
+            <div class="smoothie_name" id="superblend_name"><span style="font-family: 'Cabin Sketch', cursive;">super blend </span>Smoothies</div>
+                <div class="smoothie_see_bttn" id="superblend_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+            <!--//////////////////////////////////////////-->
+            <div class="smoothie_items">
+            <img ng-src="{{classic.smoothiepic}}" class="smoothie_pics" id ="classic_pic">
+            <div class="smoothie_name" id="classic_name"><span style="font-family: 'Cabin Sketch', cursive;">classic</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="classic_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items">
+            <img ng-src="{{watermelon.smoothiepic}}" class="smoothie_pics" id ="watermelon_pic">
+            <div class="smoothie_name" id="watermelon_name"><span style="font-family: 'Cabin Sketch', cursive;">watermelon</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="watermelon_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items_longer">
+            <img ng-src="{{wholeFood.smoothiepic}}" class="smoothie_pics" id ="wholeFood_pic">
+            <div class="smoothie_name" id="wholeFood_name"><span style="font-family: 'Cabin Sketch', cursive;">whole food nutrition</span>  Smoothies</div>
+                <div class="smoothie_see_bttn" id="wholeFood_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items">
+            <img ng-src="{{allFruit.smoothiepic}}" class="smoothie_pics" id ="allFruit_pic">
+            <div class="smoothie_name" id="allFruit_name"><span style="font-family: 'Cabin Sketch', cursive;">all-fruit</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="allFruit_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items">
+            <img ng-src="{{protein.smoothiepic}}" class="smoothie_pics" id ="protein_pic">
+            <div class="smoothie_name" id="protein_name"><span style="font-family: 'Cabin Sketch', cursive;">protein</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="protein_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items">
+            <img ng-src="{{fruitnveg.smoothiepic}}" class="smoothie_pics" id ="fruitnveg_pic">
+            <div class="smoothie_name" id="fruitnveg_name"><span style="font-family: 'Cabin Sketch', cursive; font-size: 34px">fruit & veggie</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="fruitnveg_bttn" ui-sref='fruitnveg'>
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items_longer">
+            <img ng-src="{{boosted.smoothiepic}}" class="smoothie_pics" id ="boosted_pic">
+            <div class="smoothie_name" id="boosted_name"><span style="font-family: 'Cabin Sketch', cursive; font-size: 30px">boosted with a purpose</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="boosted_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+<!--///////////////////////////////////////////////////////-->
+            <div class="smoothie_items">
+            <img ng-src="{{creamyTreats.smoothiepic}}" class="smoothie_pics" id ="creamyTreats_pic">
+            <div class="smoothie_name" id="creamyTreats_name"><span style="font-family: 'Cabin Sketch', cursive; font-size: 30px;">creamy treats</span> Smoothies</div>
+                <div class="smoothie_see_bttn" id="creamyTreats_bttn">
+                    <div class="smoothie_see_words">SEE ALL</div> <img class="smoothie_bttn_img" src="./img/__Button_arrow.png">
+                </div>
+            </div>
+    </div>
+<!--///////////ORDER IMAGE/////////////////////////////////-->
+<div class="smoothie_order">
+    <img src="./img/JAJ_order_ahead_jambaism.jpg">
 </div>
+
+
+</section>

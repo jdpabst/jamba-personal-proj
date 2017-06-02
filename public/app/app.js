@@ -23,12 +23,12 @@ angular.module('app', ['ui.router'])
             controller: 'smoothieCtrl'
         })
         .state('fruitnveg', {
-            url:'fruitnveg', 
+            url:'/fruitnveg', 
             templateUrl: './app/routes/fruitnveg/fruitnvegTmpl.html',
             controller: 'fruitnvegCtrl'
         })
         .state('upbeet', {
-            url: 'upbeet',
+            url: '/upbeet',
             templateUrl: './app/routes/upbeet/upbeetTmpl.html',
             controller: 'upbeetCtrl'
         })

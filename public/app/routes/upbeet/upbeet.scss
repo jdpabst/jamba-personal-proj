@@ -1,0 +1,163 @@
+.main_upbeet_section{
+    width: 100%;
+    background: white;
+    position: relative;
+
+    .upbeet_main_paragraph{
+        color:#572700;
+        text-align: center;
+        width: 94%;
+        // border: 2px solid hotpink;
+        margin-left: 2%;
+        margin-bottom: 33px;
+        margin-top: 44px;
+        .upbeet_header{
+            font-size: 40px;
+            margin-bottom: 23px;
+            line-height: 33px;
+        }
+        .upbeet_paragraph{
+            font-size: 15px;
+            line-height: 31px;
+        }
+    }
+    .main_upbeet_div{
+        // border: 2px solid pink;
+        width: 90%;
+        margin-left: 16px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        font-family: 'Roboto Slab', serif;
+
+        .upbeet_items{
+            color:#572700;
+           min-height: 205px;
+        //    color: lightseagreen;
+           border-top: 0.5px solid #E6E6E6;
+           position: relative; 
+           line-height: 27px;
+
+           .upbeet_pic{
+               height: 375px;
+               width: 375px;
+               margin-top: 28px;
+           }
+           .upbeet_name{
+               font-size: 38px;
+               margin-top: 29px;
+               margin-bottom: 20px;
+           }
+           .upbeet_desc{
+               margin-bottom: 50px;
+           }
+           .upbeet_ingr{
+               width: 100%;
+               margin-bottom: 54px;
+                h1{
+                    color:#f58025;
+                    font-size: 26px;
+                }
+                .all_ingr_pic{
+                    display: flex;
+                    justify-content: space-around;
+                    .ingr_pic{
+                        margin: 10px 30px;
+                    }
+                   p{
+                   color: #572700;
+                   font-size: 15px;
+               } 
+                }              
+           }
+
+           .upbeet_blend{
+               margin-bottom: 54px;
+               p{
+                color:#f58025;
+                font-size: 26px;
+                
+               }
+           }
+           .upbeet_diet{
+                margin-bottom: 54px;
+               p{
+                    color:#f58025;
+                    font-size: 26px;
+                    
+               }
+            
+               }
+               .upbeet_nutrition{
+                   position: relative;
+                //    border: 2px solid black;
+                   .nutrition_options{
+                        position: relative;
+                        // border: 2px solid pink;
+                        height: 200px;
+                        width: 100%;
+                        img{
+                            position: absolute;
+                            top: 10px;
+                        }
+                        h2 {
+                            position: absolute;
+                            top: 25px;
+                            left: 67px;
+                            font-weight: bold;
+
+                        }
+                        .upbeet_small{
+                                position: absolute;
+                                left: 70px;
+                                top: 60px;
+                                background: #f58024;
+                                height: 46px;
+                                width: 94px;
+                                text-align: center;
+                                vertical-align: middle;
+                                line-height: 43px;
+                                color: white;
+                                border-radius: 2px;
+
+                            }
+                        .upbeet_medium{
+                                position: absolute;
+                                left: 169px;
+                                top: 60px;
+                                border: 3px solid #f58024;
+                                height: 46px;
+                                width: 94px;
+                                text-align: center;
+                                vertical-align: middle;
+                                line-height: 43px;
+                                color: #f58024;
+                                border-radius: 2px;
+                            }
+                        .upbeet_large{
+                                border-radius: 2px;
+                                color: #f58024;
+                                position: absolute;
+                                left: 270px;
+                                top: 60px;
+                                border: 3px solid #f58024;
+                                height: 46px;
+                                width: 94px;
+                                text-align: center;
+                                vertical-align: middle;
+                                line-height: 43px;
+                            }
+                   }
+
+               .upbeet_order{
+                    width: 100%;
+                    margin-top: 88px;
+                    img {
+                        height: 85px;
+                        width: 100%;
+                        padding: 0;
+                        }
+                    }
+    }
+        }
+}
+}
