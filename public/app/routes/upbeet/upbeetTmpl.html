@@ -64,13 +64,13 @@
                     <img src="./img/smoothies.jpg">
                     <h2>Select option:</h2>
                     <div class="size_bttns">
-                        <div class="upbeet_small">SMALL</div>
-                        <div class="upbeet_medium">MEDIUM</div>
-                        <div class="upbeet_large">LARGE</div>
+                        <div class="upbeet_small upbeet_active" ng-click="changeNutrition('small')">SMALL</div>
+                        <div class="upbeet_medium" ng-click="changeNutrition('medium')">MEDIUM</div>
+                        <div class="upbeet_large" ng-click="changeNutrition('large')">LARGE</div>
                     </div>
                 </div>
                 <p>Nutritional Facts:</p>
-                <table class="nutrition_tbl">
+                <table class="nutrition_tbl" ng-show="smallTbl">
                     <tr class="tbl_headers">
                         <th></th>
                         <th class="tbl_right">% Daily Value</th>
@@ -117,11 +117,122 @@
                         <td class="right_col"></td>
                     </tr>
                 </table>
-                <ul>
+                <ul ng-show="smallTbl">
                     <li><span style="font-weight: bold">Vitamin A</span>  120%</li>
                     <li><span style="font-weight: bold">Calcium</span>  10%</li>
                     <li><span style="font-weight: bold">Vitamin C</span>  120%</li>
                     <li><span style="font-weight: bold">Iron</span>  10%</li>
+                </ul>
+
+<!--/////////////////MEDIUM NUTRITION TABLE/////////-->
+<table class="nutrition_tbl" ng-show="mediumTbl">
+                    <tr class="tbl_headers">
+                        <th></th>
+                        <th class="tbl_right">% Daily Value</th>
+                    </tr>
+
+                    <tr>
+                        <td class="left_col">Calories 340</td>
+                        <td class="right_col"></td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Total Fat 1.5g</td>
+                        <td class="right_col">2%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Saturated Fat 0g</td>
+                        <td class="right_col">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Trans Fat 0g</td>
+                        <td class="right_col">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Cholesterol 0mg</td>
+                        <td class="right_col">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Sodium 230mg</td>
+                        <td class="right_col">10%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Total Carbohydrates 74g</td>
+                        <td class="right_col">25%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Dietray Fiber 13g</td>
+                        <td class="right_col">51%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Sugar 56g</td>
+                        <td class="right_col"></td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Protein 5g</td>
+                        <td class="right_col"></td>
+                    </tr>
+                </table>
+                <ul ng-show="mediumTbl">
+                    <li><span style="font-weight: bold">Vitamin A</span>  190%</li>
+                    <li><span style="font-weight: bold">Calcium</span>  15%</li>
+                    <li><span style="font-weight: bold">Vitamin C</span>  150%</li>
+                    <li><span style="font-weight: bold">Iron</span>  15%</li>
+                </ul>
+
+<!--///////////////LARGE NUTRITION INFO/////////////-->
+<table class="nutrition_tbl" ng-show="largeTbl">
+                    <tr class="tbl_headers">
+                        <th></th>
+                        <th class="tbl_right">% Daily Value</th>
+                    </tr>
+
+                    <tr>
+                        <td class="left_col">Calories 400</td>
+                        <td class="right_col"></td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Total Fat 1.5g</td>
+                        <td class="right_col">3%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Saturated Fat 0g</td>
+                        <td class="right_col">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Trans Fat 0g</td>
+                        <td class="right_col">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Cholesterol 0mg</td>
+                        <td class="right_col">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Sodium 280mg</td>
+                        <td class="right_col">12%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Total Carbohydrates 86g</td>
+                        <td class="right_col">29%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Dietray Fiber 15g</td>
+                        <td class="right_col">60%</td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Sugar 65g</td>
+                        <td class="right_col"></td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">Protein 6g</td>
+                        <td class="right_col"></td>
+                    </tr>
+                </table>
+
+                <ul ng-show="largeTbl">
+                    <li><span style="font-weight: bold">Vitamin A</span>  220%</li>
+                    <li><span style="font-weight: bold">Calcium</span>  20%</li>
+                    <li><span style="font-weight: bold">Vitamin C</span>  180%</li>
+                    <li><span style="font-weight: bold">Iron</span>  20%</li>
                 </ul>
                 <h4>*Percent Daily Values (DV) are based on a 2,000 calorie diet.</h4>
 

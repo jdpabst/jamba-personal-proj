@@ -23,7 +23,7 @@
             </div>
             <img class="hamburger" src="./img/PullDown.png">
         </div>
-       <div class="mobile_menu_dropdown" ng-controller="headerCtrl">
+    <div class="mobile_menu_dropdown" ng-controller="headerCtrl">
         <input type="text" class="home_site_search" placeholder="Site Search">
         <div class="home_site_search_bttn"><img src="./img/searchMOBILE.png"></div>
         <div class="home_menu"><div class="home_dropmenu_words">Menu & Nutrition</div> <img src="./img/subNav-BG.png" ng-click="closeMobileMenu()" ui-sref="menu"></div>
@@ -64,10 +64,10 @@
         <div>
         <p>Menu & Nutrition</p>
         <ul class="menu_nutrition">
-            <li>Menu</li>
+            <li ui-sref="menu">Menu</li>
             <li>Energy Bowls</li>
             <li>Shots</li>
-            <li>Smoothies</li>
+            <li ui-sref="smoothies">Smoothies</li>
             <li>Juices</li>
             <li>Tasty Bites</li>
             <li>Jamba Kids</li>
