@@ -87,13 +87,23 @@
                }
             
                }
-               .upbeet_nutrition{
-                   position: relative;
+        }
+}
+
+.upbeet_nutrition{
+                position: relative;
                 //    border: 2px solid black;
+                width: 100%;
+                font-family: 'Roboto Slab', serif;
+                p{
+                    color:#f58025;
+                    font-size: 26px;
+                    margin-left: 12px;
+                }
                    .nutrition_options{
                         position: relative;
                         // border: 2px solid pink;
-                        height: 200px;
+                        height: 131px;
                         width: 100%;
                         img{
                             position: absolute;
@@ -147,8 +157,103 @@
                                 line-height: 43px;
                             }
                    }
+    }
+    .nutrition_tbl{
+            border-bottom: 4px solid #572700;
+            width: 93%;
+            font-family: 'Roboto Slab', serif;
+            line-height: 30px;
+            margin-left: 14px;
+            margin-right: 5px;
 
-               .upbeet_order{
+            .tbl_right{
+                // border: 2px solid lightcyan;
+                font-size: 14px;
+                text-align: right;
+            }
+            .right_col{
+                border-top: 0.5px solid #572700;
+                text-align: right;
+                font-size: 14px;
+                color:#f58024;
+            }
+            .left_col{
+                border-top: 0.5px solid #572700;
+                font-size: 14px;
+
+            }
+        }
+    ul{
+        font-size: 14px;
+        color: #572700;
+        margin-bottom: 30px;
+        li{
+            // border: 1px solid gray;
+            display: inline-block;
+            width: 191px;
+            margin-top: 11px;
+            margin-left: 14px;
+        }
+    }
+    h4{
+        color: #572700;
+        margin-left: 14px;
+        width: 93%; 
+        font-size: 14px;
+    }
+    .food_combo{
+        // border: 1px solid gray;
+        position: relative;
+        height: 75px;
+        margin-top: 33px;
+        h5{
+            font-family: 'Teko', sans-serif;
+            color: #572700;
+            font-weight: bold;
+            position: absolute;
+            top: 5px;
+            left: 100px;
+            font-size: 28px;
+            
+            }
+        img{
+            position: absolute;
+            top: 9px;
+            left: 43px;
+
+        }
+    } 
+    .cheddar_twist{
+        // border: 1px solid lightseagreen;
+        width: 95%;
+        height: 226px;
+        margin-top: 16px;
+        img{
+            height: 74px;
+            position: absolute;
+            left: 23px;
+        }
+        h1{
+            color:#f58025;
+            font-size: 31px;
+            // border: 1px solid lightcoral;
+            margin-bottom: 20px;
+            width: 268px;
+            margin-left: 31px;
+            float: right;
+        }
+        .cheddar{
+            color: #572700;
+            font-size: 15px;
+            // border: 1px solid lightgreen;
+            line-height: 25px;
+            float: right;
+            width: 268px;
+            margin-left: 31px;
+        }
+    }
+
+.upbeet_order{
                     width: 100%;
                     margin-top: 88px;
                     img {
@@ -157,7 +262,5 @@
                         padding: 0;
                         }
                     }
-    }
-        }
-}
+
 }
