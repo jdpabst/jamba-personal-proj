@@ -26,4 +26,4 @@ app.get('/api/menu/smoothies/fnv/beet', mainCtrl.getBeet);
 
 
 
-app.listen(8000, console.log('listening on port 8000'))
+app.listen(3000, console.log('listening on port 8000'))

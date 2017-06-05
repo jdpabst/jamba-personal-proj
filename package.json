@@ -1,7 +1,6 @@
 {
   "name": "personal",
   "version": "1.0.0",
-  "description": "",
   "main": "./server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,9 +16,19 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-ng-annotate": "^2.0.0",
     "gulp-sass": "^3.1.0",
     "massive": "^2.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdpabst/jamba-personal-proj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jdpabst/jamba-personal-proj/issues"
+  },
+  "homepage": "https://github.com/jdpabst/jamba-personal-proj#readme",
+  "description": ""
 }
