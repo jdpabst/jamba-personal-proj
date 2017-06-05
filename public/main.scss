@@ -170,6 +170,12 @@
     @media(max-width: 770px){
         display:none;
     }
+        .main_title{
+            height: 55px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
         .menu_options_desktop{
             width: 46%;
             height: 20px;
