@@ -2,22 +2,26 @@
 
     <!--/////////////////////////MOBILE HOME//////////////////////////////-->
     <div class="summer_sweepstakes_img">
-        <img src="./img/Summer_Sweep_hood_mobile.jpg">
+        <img class = "mobile" src="./img/Summer_Sweep_hood_mobile.jpg">
+        <img class ="desktop" src="./img/Summer_Sweep_hood_desktop.jpg">
     </div>
     <div class="home_main_carousel">
-        <ul>
-            <li><img src="./img/yellow.pdf"></li>
-            <li><img src="./img/green.jpg"></li>
-            <li><img src="./img/blue.jpg"></li>
+        <ul class="mobile_carousel">
+            <li id="yellow"><img src="./img/yellow.pdf"></li>
+            <li id="green"><img src="./img/green.jpg"></li>
+            <li id="blue"><img src="./img/blue.jpg"></li>
         </ul>
-        <!--<ul class="desktop_carousel">
-            <li><img src="./img/yellow_desktop.pdf"></li>
-            <li><img src="./img/green_desktop.jpg"></li>
-            <li><img src="./img/blue_desktop.jpg"></li>
-        </ul>-->
+        <ul class="desktop_carousel">
+            <li id="yellow"><img src="./img/yellow_desktop.jpg"></li>
+            <li id="green"><img src="./img/green_desktop.jpg"></li>
+            <li id="blue"><img src="./img/blue_desktop.jpg"></li>
+        </ul>
         
-        <div id="prev"><img class ="prev" src="./img/corousel-controls.png"></div>
-        <div id="next"><img class="next" src="./img/corousel-controls.png"></div>
+        <div id="prev_mobile"><img class ="prev" src="./img/corousel-controls.png"></div>
+        <div id="next_mobile"><img class="next" src="./img/corousel-controls.png"></div>
+
+        <div id="prev_desktop"><img class ="prev" src="./img/corousel-controls.png"></div>
+        <div id="next_desktop"><img class="next" src="./img/corousel-controls.png"></div>
     </div>
 
     <div class="home_paragraph_one">
@@ -27,49 +31,98 @@
     </div>
 
     <div class="home_food_carousel">
-        <ul>
-            <!--//////PINEAPPLE///////////////-->
-            <li>
-                <div>
-                    <img src="./img/meet-pataya.jpg">
-                    <div class="white_line_left"></div>
-                    <p class="meet">meet</p>
-                    <div class="white_line_right"></div>
-                    <p>pataya</p>
-                </div>
-            </li>
-            <!--///////////////LEMON////////////-->
-            <li>
-                <div>
-                    <img src="./img/meet-lemon.jpg">
-                    <div class="white_line_left"></div>
-                    <p class="meet">meet</p>
-                    <div class="white_line_right"></div>
-                    <p>lemon</p>
-                <div>
-            </li>
-            <!--////////////CARROT///////////////-->
-            <li>
-                <div>
-                    <img src="./img/meet-carrots.jpg">
-                    <div class="white_line_left"></div>
-                    <p class="meet">meet</p>
-                    <div class="white_line_right"></div>
-                    <p>carrot</p>
-                </div>
-            </li>
-        </ul>
+            <ul>
+                <!--//////PATAYA///////////////-->
+                <li>
+                    <div class="food_container" id="food_container">
+                            <img src="./img/meet-pataya.jpg">
+                            <div class="words_container">
+                                <div class="white_line_left"></div>
+                                <p class="meet">meet</p>
+                                <div class="white_line_right"></div>
+                                <p>pataya</p>
+                        </div>
+                    </div>
+                </li>
+                <!--///////////////LEMON////////////-->
+                <li>
+                    <div class="food_container" id="food_container">
+                            <img src="./img/meet-lemon.jpg">
+                            <div class="words_container">
+                                <div class="white_line_left"></div>
+                                <p class="meet">meet</p>
+                                <div class="white_line_right"></div>
+                                <p>lemon</p>
+                            </div>
+                    </div>
+                </li>
+                <!--////////////CARROT///////////////-->
+                <li>
+                    <div class="food_container" id="food_container_one">
+                            <!--<img src="./img/meet-carrots.jpg">-->
+                            <div class="words_container">
+                                <div class="white_line_left"></div>
+                                <p class="meet">meet</p>
+                                <div class="white_line_right"></div>
+                                <p>carrot</p>
+                            </div>
+                    </div>
+                </li>
+            </ul>
         <div id="food_prev"><img class ="food_prev" src="./img/white-arrow.png"></div>
         <div id="food_next"><img class="food_next" src="./img/white-arrow.png"></div>
     </div>
+     <!-- DESKTOP -->
+        <div class="desktop_view">
+            <ul>
+                <!--//////PATAYA///////////////-->
+                <li>
+                    <div class="food_container" id="food_container">
+                            <img src="./img/meet-pataya.jpg">
+                            <div class="words_container">
+                                <div class="white_line_left"></div>
+                                <p class="meet">meet</p>
+                                <div class="white_line_right"></div>
+                                <p>pataya</p>
+                        </div>
+                    </div>
+                </li>
+                <!--///////////////LEMON////////////-->
+                <li>
+                    <div class="food_container" id="food_container">
+                            <img src="./img/meet-lemon.jpg">
+                            <div class="words_container">
+                                <div class="white_line_left"></div>
+                                <p class="meet">meet</p>
+                                <div class="white_line_right"></div>
+                                <p>lemon</p>
+                            </div>
+                    </div>
+                </li>
+                <!--////////////CARROT///////////////-->
+                <li>
+                    <div class="food_container" id="food_container">
+                            <img src="./img/meet-carrots.jpg">
+                            <div class="words_container">
+                                <div class="white_line_left"></div>
+                                <p class="meet">meet</p>
+                                <div class="white_line_right"></div>
+                                <p>carrot</p>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--DESKTOP-->
 
     <div class="soccer">
-        <p><img  class ="soccer_words" src="./img/EnergyHomePage_Headline.png"></p>
-        <p><img class="soccer_img" src="./img/mobile_energy_img.jpg"></p>
-        <div class="soccer_bttn">
-            <div class="soccer_line_one"> POWER UP </div>
-            <div class="soccer_line_two">HERE</div>
-            <div class="soccer_arrow"><img src="./img/__Button_arrow.png"></div>
+        <div class="soccer_div">
+            <p><img  class ="soccer_words" src="./img/EnergyHomePage_Headline.png"></p>
+            <div class="soccer_bttn">
+                <div class="soccer_line_one"> POWER UP </div>
+                <div class="soccer_line_two">HERE</div>
+                <div class="soccer_arrow"><img src="./img/__Button_arrow.png"></div>
+            </div>
         </div>
     </div>
 

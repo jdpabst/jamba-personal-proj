@@ -1,9 +1,43 @@
 angular.module('app').controller('homeCtrl', function($scope){
 
-$(function() {
+// let prev = $('#prev');
+// let next= $('#next');
+// let pics = $('.mobile_carousel');
+// let left = parseInt(pics.css('left'), 10);
 
-var ul = $(".home_main_carousel ul");
-var slide_count = ul.children().length;
+// prev.click(function(){
+
+//     if(left < 0){
+//         left += 150;
+//     } 
+//     pics.css({
+//         left: left + '%'
+//     })
+// });
+
+// next.click(function(){
+
+//     if(left > -440){
+//         left -= 150;
+//     } 
+//     pics.css({
+//         left: left + '%'
+//     })
+// });
+
+$(homeMainCarousel);
+
+$(window).resize(homeMainCarousel)
+
+function homeMainCarousel() {
+var mq = window.matchMedia("(min-width: 550px)");
+if(mq.matches){
+        var ul = $('.desktop_carousel')
+    } else {
+        var ul = $('.mobile_carousel')
+    }
+
+var slide_count = 3;
 var slide_width_pc = 100.0 / slide_count;
 var slide_index = 0;
 
@@ -39,7 +73,7 @@ slide_index = new_slide_index
 
 }
 
-});
+};
 
 
 

@@ -1,12 +1,12 @@
 .mobile_nav {
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     // background: gray;
     // display: flex;
     // justify-content: space-around;
     position: relative;
     border-bottom: 1.5px solid lightgray;
-    @media(min-width: 770px){
+    @media(min-width: 650px){
         display: none;
     }
     
@@ -164,10 +164,11 @@
 
 .desktop_nav{
     width: 100%;
-    height: 80px;
+    height: 73px;
     // display: none;
     position: relative;
-    @media(max-width: 770px){
+    border-bottom: 0.5px solid #dbd5d3;
+    @media(max-width: 650px){
         display:none;
     }
         .main_title{
@@ -206,7 +207,7 @@
         .search_desktop{
             position: relative;
             position: absolute;
-            top: 21px;
+            top: 16px;
             right: 119px;
             input{
                 border-top: 0px;
