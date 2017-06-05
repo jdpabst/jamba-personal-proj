@@ -216,6 +216,26 @@
                 top: 2px;
             }
         }
+        .order_bttn{
+            height: 58px;
+            width: 70px;
+            background: #ef5d21;
+            position: absolute;
+            bottom: 0px;
+            right: 32px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            p{
+                color: white;
+                position: absolute;
+                top: 17px;
+                left: 16px;
+                font-family: 'Teko', sans-serif;
+                letter-spacing: 0.5px;
+                font-size: 17px;
+                line-height: 13px;
+            }
+        }
 }
 
 .mobile_footer{
