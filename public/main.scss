@@ -6,6 +6,9 @@
     // justify-content: space-around;
     position: relative;
     border-bottom: 1.5px solid lightgray;
+    @media(min-width: 770px){
+        display: none;
+    }
     
         .main_title {
             padding-top: 5px;
@@ -157,6 +160,62 @@
             left: 30px;
         }
     }
+}
+
+.desktop_nav{
+    width: 100%;
+    height: 80px;
+    // display: none;
+    position: relative;
+    @media(max-width: 770px){
+        display:none;
+    }
+        .menu_options_desktop{
+            width: 46%;
+            height: 20px;
+            // border: 2px solid hotpink;
+            position: absolute;
+            bottom: 11px;
+            right: 102px;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    font-family: 'Kreon', serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    .menu{
+                        color:#C60C46;
+                    }
+                    .blend {
+                        color: #FFC425;
+                    }
+                    .more{
+                        color:#BED600;
+                    }
+                    .finder{
+                        color:#4aa942;
+                    }
+            }
+        }
+        .search_desktop{
+            position: relative;
+            position: absolute;
+            top: 21px;
+            right: 119px;
+            input{
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 1px solid #ccc;
+                font-size: 14px;
+            }
+            img{
+                height: 12px;
+                position: absolute;
+                right: 4px;
+                top: 2px;
+            }
+        }
 }
 
 .mobile_footer{
