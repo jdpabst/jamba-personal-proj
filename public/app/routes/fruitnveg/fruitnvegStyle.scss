@@ -3,101 +3,134 @@
     background: white;
     position: relative;
 
-    .fnv_main_paragraph{
-        color:#572700;
-        text-align: center;
-        width: 94%;
-        // border: 2px solid hotpink;
-        margin-left: 2%;
-        margin-bottom: 33px;
-        margin-top: 44px;
-        .fnv_header{
-            font-size: 40px;
-            margin-bottom: 23px;
-            line-height: 33px;
+    .main_upper_fnv_section{
+        @media(min-width: 650px){
+        max-width: 600px;
+        margin-left: calc(50% - 300px);
         }
-        .fnv_paragraph{
-            font-size: 15px;
-            line-height: 31px;
-        }
-    }
-
-    .main_fnv_div{
-        width: 90%;
-        margin-left: 16px;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-        font-family: 'Roboto Slab', serif;
-        
-        .fnv_items{
+        .fnv_main_paragraph{
             color:#572700;
-           min-height: 205px;
-        //    color: lightseagreen;
-           border-top: 0.5px solid #E6E6E6;
-           position: relative; 
-           
-                #appleGreens_bttn{
-                    background: #f15d22;
+            text-align: center;
+            width: 94%;
+            // border: 2px solid hotpink;
+            margin-left: 2%;
+            margin-bottom: 33px;
+            margin-top: 44px;
+            @media(min-width: 650px){
+                margin-top: 20px;
+                width: 75%;
+                margin-left: 12.5%; 
+            }
+            .fnv_header{
+                font-size: 40px;
+                margin-bottom: 23px;
+                line-height: 33px;
+                width: 400px;
+                // border: 1.5px solid lime;
+                span{
+                     font-size: 55px;
+                     @media(min-width: 650px){
+                         font-size: 30px;
+                     }
                 }
-        
-                #greensGinger_bttn{
-                    background: #c60c48;
+                @media(min-width: 650px){
+                    font-size: 30px;
+                    width: 450px;
                 }
-
-                #upbeet_bttn{
-                    background: #4aa942;
+            }
+            .fnv_paragraph{
+                font-size: 15px;
+                line-height: 31px;
+                @media(min-width: 650px){
+                    font-size: 11px;
+                    line-height: 22px;
                 }
-                #orangeCarrot_bttn{
-                    background: #c1d72f;
-                }
-                
-
-           .fnv_name {
-                // border: 1px solid pink;
-                width: 238px;
-                // position: absolute;
-                margin-top: -122px;
-                margin-left: 142px;
-                font-size: 29px;   
-           }
-
-           .fnv_see_bttn{
-               height: 40px;
-                width: 183px;
-                border-radius: 3px;
-                // background: lightseagreen;
-                position: relative;
-                margin-top: 16px;
-                margin-left: 139px;
-           }
-           .fnv_see_words{
-                    color: white;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 12px;
-                    right: 66px;
+            }
+            span{
+                font-size: 22px;
+                @media(min-width: 650px){
                     font-size: 16px;
-                }
-                
-                .fnv_bttn_img{
-                    height: 21px;
-                    width: 30px;
-                    position: absolute;
-                    right: 22px;
-                    top: 8px;
+                    }
 
                 }
-           .fnv_pics{
-               height: 120px;
-                width: 120px;
-                position: relative;
-                // margin-left: 10px;
-                margin-top: 30px;
-           }
+        }
+
+        .main_fnv_div{
+            width: 90%;
+            margin-left: 16px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            font-family: 'Roboto Slab', serif;
+            
+            .fnv_items{
+                color:#572700;
+            min-height: 205px;
+            //    color: lightseagreen;
+            border-top: 0.5px solid #E6E6E6;
+            position: relative; 
+            
+                    #appleGreens_bttn{
+                        background: #f15d22;
+                    }
+            
+                    #greensGinger_bttn{
+                        background: #c60c48;
+                    }
+
+                    #upbeet_bttn{
+                        background: #4aa942;
+                    }
+                    #orangeCarrot_bttn{
+                        background: #c1d72f;
+                    }
+                    
+
+            .fnv_name {
+                    // border: 1px solid pink;
+                    width: 238px;
+                    // position: absolute;
+                    margin-top: -122px;
+                    margin-left: 142px;
+                    font-size: 29px;   
+            }
+
+            .fnv_see_bttn{
+                height: 40px;
+                    width: 183px;
+                    border-radius: 3px;
+                    // background: lightseagreen;
+                    position: relative;
+                    margin-top: 16px;
+                    margin-left: 139px;
+            }
+            .fnv_see_words{
+                        color: white;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 12px;
+                        right: 66px;
+                        font-size: 16px;
+                    }
+                    
+                    .fnv_bttn_img{
+                        height: 21px;
+                        width: 30px;
+                        position: absolute;
+                        right: 22px;
+                        top: 8px;
+
+                    }
+            .fnv_pics{
+                height: 120px;
+                    width: 120px;
+                    position: relative;
+                    // margin-left: 10px;
+                    margin-top: 30px;
+                }
+            }
         }
     }
-
-    }
+}
 
 
 .fnv_order{

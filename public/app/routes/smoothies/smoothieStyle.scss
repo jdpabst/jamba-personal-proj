@@ -2,201 +2,374 @@
     width: 100%;
     background: white;
     position: relative;
-
-    .smoothie_main_paragraph{
-        color:#572700;;
-        text-align: center;
-        width: 97%;
-        // border: 2px solid hotpink;
-        margin-left: 2%;
-        margin-bottom: 33px;
-        margin-top: 44px;
-        .smoothie_header{
-            font-size: 40px;
-            margin-bottom: 20px;
+    .main_smoothie_upper_section{
+        @media(min-width: 650px){
+        max-width: 600px;
+        margin-left: calc(50% - 300px);
         }
-        .smoothie_paragraph{
-            font-size: 15px;
-            line-height: 31px;
-        }
-    }
-
-    .main_smoothie_div{
-        width: 90%;
-        margin-left: 5%;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-        font-family: 'Roboto Slab', serif;
-
-        .smoothie_items_longer{
-            min-height: 231px;
-        //    color: lightseagreen;
-           border-top: 0.5px solid #E6E6E6;
-           position: relative;
-
-                #wholeFood_name{
-                    color:#c1d72f;
-
+        .smoothie_main_paragraph{
+            color:#572700;;
+            text-align: center;
+            width: 97%;
+            // border: 2px solid hotpink;
+            margin-left: 2%;
+            margin-bottom: 33px;
+            margin-top: 44px;
+            @media(min-width: 650px){
+                margin-top: 20px;
+                width: 75%;
+                margin-left: 12.5%; 
+            }
+            .smoothie_header{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .smoothie_paragraph{
+                font-size: 15px;
+                line-height: 31px;
+                @media(min-width: 650px){
+                    font-size: 12px;
                 }
-                #wholeFood_bttn{
-                    background: #c1d72f;
-                }
-                #boosted_name{
-                    color:#c60c48;
-
-                }
-                #boosted_bttn{
-                    background: #c60c48;
-                }
-                .smoothie_name {
-                // border: 1px solid pink;
-                width: 196px;
-                // position: absolute;
-                margin-top: -122px;
-                margin-left: 142px;
-                font-size: 35px;   
-           }
-
-           .smoothie_see_bttn{
-               height: 38px;
-                width: 151px;
-                border-radius: 3px;
-                // background: lightseagreen;
-                position: relative;
-                margin-top: 16px;
-                margin-left: 139px;
-           }
-           .smoothie_see_words{
-                    color: white;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 10px;
-                    right: 66px;
+            }
+            span{
+                font-size: 22px;
+                @media(min-width: 650px){
                     font-size: 16px;
-                }
-                
-                .smoothie_bttn_img{
-                    height: 21px;
-                    width: 30px;
-                    position: absolute;
-                    right: 16px;
-                    top: 6px;
+                    }
 
                 }
-
-            .smoothie_pics{
-               height: 120px;
-                width: 120px;
-                position: relative;
-                // margin-left: 10px;
-                margin-top: 30px;
-           }
         }
-        .smoothie_items{
-           min-height: 205px;
-        //    color: lightseagreen;
-           border-top: 0.5px solid #E6E6E6;
-           position: relative; 
-           
-                #superblend_name{
-                    color:#f58025;
 
-                }
-                #superblend_bttn{
-                    background: #f58025;
-                }
+        .main_smoothie_div{
+            width: 90%;
+            margin-left: 5%;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            font-family: 'Roboto Slab', serif;
+
+            .smoothie_items_longer{
+                min-height: 231px;
+            //    color: lightseagreen;
+            border-top: 0.5px solid #E6E6E6;
+            position: relative;
+
+                    #wholeFood_name{
+                        color:#c1d72f;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
+
+                    }
+                    #wholeFood_bttn{
+                        background: #c1d72f;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
+                    #boosted_name{
+                        color:#c60c48;
+                        span{
+                            font-size: 33px;
+                            @media(min-width: 650px){
+                                font-size: 20px;
+                            }
+                        }
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
+
+                    }
+                    #boosted_bttn{
+                        background: #c60c48;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
+                    .smoothie_name {
+                    // border: 1px solid pink;
+                    width: 196px;
+                    // position: absolute;
+                    margin-top: -122px;
+                    margin-left: 142px;
+                    font-size: 35px; 
+                      
+            }
+
+            .smoothie_see_bttn{
+                height: 38px;
+                    width: 151px;
+                    border-radius: 3px;
+                    // background: lightseagreen;
+                    position: relative;
+                    margin-top: 16px;
+                    margin-left: 139px;
+            }
+            .smoothie_see_words{
+                        color: white;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 10px;
+                        right: 66px;
+                        font-size: 16px;
+                        @media(min-width: 650px){
+                            font-size: 13px;
+                        }
+                    }
+                    
+                    .smoothie_bttn_img{
+                        height: 21px;
+                        width: 30px;
+                        position: absolute;
+                        right: 16px;
+                        top: 6px;
+                        @media(min-width: 650px){
+                            height: 15px;
+                            width: 23px;
+                        }
+
+                    }
+
+                .smoothie_pics{
+                height: 120px;
+                    width: 120px;
+                    position: relative;
+                    // margin-left: 10px;
+                    margin-top: 30px;
+                    @media(min-width: 650px){
+                        height: 150px;
+                        width: 150px;
+                    }
+            }
+            }
+            .smoothie_items{
+            min-height: 205px;
+            //    color: lightseagreen;
+            border-top: 0.5px solid #E6E6E6;
+            position: relative; 
             
+                    #superblend_name{
+                        color:#f58025;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
+
+                    }
+                    #superblend_bttn{
+                        background: #f58025;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
                 
-                #classic_name{
-                    color:#c60c48;
+                    
+                    #classic_name{
+                        color:#c60c48;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
-                }
-                #classic_bttn{
-                    background: #c60c48;
-                }
+                    }
+                    #classic_bttn{
+                        background: #c60c48;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
 
-                #watermelon_name{
-                    color:#4aa942;
+                    #watermelon_name{
+                        color:#4aa942;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
-                }
-                #watermelon_bttn{
-                    background: #4aa942;
-                }
-                
-                #allFruit_name{
-                    color:#f15d22;
+                    }
+                    #watermelon_bttn{
+                        background: #4aa942;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
+                    
+                    #allFruit_name{
+                        color:#f15d22;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
-                }
-                #allFruit_bttn{
-                    background: #f15d22;
-                }
+                    }
+                    #allFruit_bttn{
+                        background: #f15d22;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
 
-                #protein_name{
-                    color:#7c003f;
+                    #protein_name{
+                        color:#7c003f;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
-                }
-                #protein_bttn{
-                    background: #7c003f;
-                }
+                    }
+                    #protein_bttn{
+                        background: #7c003f;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
 
-                #fruitnveg_name{
-                    color:#f15d22;
+                    #fruitnveg_name{
+                        color:#f15d22;
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
-                }
-                #fruitnveg_bttn{
-                    background: #f15d22;
-                }
+                    }
+                    #fruitnveg_bttn{
+                        background: #f15d22;
+                        cursor:pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
 
-                #creamyTreats_name{
-                    color:#4aa942;
+                    #creamyTreats_name{
+                        color:#4aa942;
+                        span{
+                            font-size: 30px;
+                            @media(min-width: 650px){
+                                font-size: 20px;
+                            }
+                        }
+                        @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
-                }
-                #creamyTreats_bttn{
-                    background: #4aa942;
-                }
+                    }
+                    #creamyTreats_bttn{
+                        background: #4aa942;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
+                    }
 
-           .smoothie_name {
-                // border: 1px solid pink;
-                width: 196px;
-                // position: absolute;
-                margin-top: -122px;
-                margin-left: 142px;
-                font-size: 35px;   
-           }
+            .smoothie_name {
+                    // border: 1px solid pink;
+                    width: 196px;
+                    // position: absolute;
+                    margin-top: -122px;
+                    margin-left: 142px;
+                    font-size: 35px;   
+            }
 
-           .smoothie_see_bttn{
-               height: 38px;
-                width: 151px;
-                border-radius: 3px;
-                background: lightseagreen;
-                position: relative;
-                margin-top: 16px;
-                margin-left: 139px;
-           }
-           .smoothie_see_words{
-                    color: white;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 10px;
-                    right: 66px;
-                    font-size: 16px;
-                }
-                
-                .smoothie_bttn_img{
-                    height: 21px;
-                    width: 30px;
-                    position: absolute;
-                    right: 16px;
-                    top: 6px;
+            .smoothie_see_bttn{
+                height: 38px;
+                    width: 151px;
+                    border-radius: 3px;
+                    background: lightseagreen;
+                    position: relative;
+                    margin-top: 16px;
+                    margin-left: 139px;
+            }
+            .smoothie_see_words{
+                        color: white;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 10px;
+                        right: 66px;
+                        font-size: 16px;
+                        @media(min-width: 650px){
+                            font-size: 13px;
+                        }
+                    }
+                    
+                    .smoothie_bttn_img{
+                        height: 21px;
+                        width: 30px;
+                        position: absolute;
+                        right: 16px;
+                        top: 6px;
+                        @media(min-width: 650px){
+                            height: 15px;
+                            width: 23px;
+                        }
 
+                    }
+            .smoothie_pics{
+                height: 120px;
+                    width: 120px;
+                    position: relative;
+                    // margin-left: 10px;
+                    margin-top: 30px;
+                    @media(min-width: 650px){
+                        height: 150px;
+                        width: 150px;
+                    }
                 }
-           .smoothie_pics{
-               height: 120px;
-                width: 120px;
-                position: relative;
-                // margin-left: 10px;
-                margin-top: 30px;
-           }
+            }
         }
     }
     
@@ -211,7 +384,7 @@
         width: 100%;
         margin-top: 96px;
         img {
-            height: 85px;
+            // height: 85px;
             width: 100%;
             padding: 0;
         }

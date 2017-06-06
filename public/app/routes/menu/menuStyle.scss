@@ -27,12 +27,12 @@
                 font-size: 16px;
                 line-height: 31px;
                 @media(min-width: 650px){
-                    font-size: 14px;
+                    font-size: 12px;
                 }
                 span{
                     font-size: 22px;
                     @media(min-width: 650px){
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
                 }
@@ -53,15 +53,17 @@
                 position: relative;
 
                 .menu_items_name{
-                    border: 1px solid pink;
+                    // border: 1px solid pink;
                     width: 196px;
                     // position: absolute;
                     margin-top: -122px;
                     margin-left: 142px;
                     font-size: 35px;
                     @media(min-width: 650px){
-                        width: 400px;
-                        font-size: 28px;
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
                     }
                     
                 }
@@ -73,6 +75,14 @@
                     position: relative;
                     margin-top: 16px;
                     margin-left: 139px;
+                    cursor: pointer;
+                    @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
         
                     .menu_see_words{
                         color: white;
@@ -81,6 +91,9 @@
                         top: 10px;
                         right: 66px;
                         font-size: 16px;
+                        @media(min-width: 650px){
+                            font-size: 13px;
+                        }
                     }
                     
                     .menu_bttn_img{
@@ -89,6 +102,10 @@
                         position: absolute;
                         right: 16px;
                         top: 6px;
+                        @media(min-width: 650px){
+                            height: 15px;
+                            width: 23px;
+                        }
 
                     }
                 }
@@ -98,6 +115,10 @@
                     position: relative;
                     margin-left: 10px;
                     margin-top: 30px;
+                    @media(min-width: 650px){
+                        height: 150px;
+                        width: 150px;
+                    }
                 }
 
 
@@ -110,51 +131,142 @@
 
                     #bowl_name{
                         color:#f58025;
+                         @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
+                        
 
                     }
                     #bowl_bttn{
                         background: #f58025;
+                        cursor: pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
                 
                     
                     #shots_name{
                         color:#c60c48;
+                         @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
                     }
                     #shots_bttn{
                         background: #c60c48;
+                        cursor: pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
 
                     #menu_smoothies_name{
                         color:#4aa942;
+                         @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
                     }
                     #smoothies_bttn{
                         background: #4aa942;
+                        cursor: pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
 
                     #bites_name{
                         color:#f15d22;
+                         @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
+                        span {
+                        font-size: 37px;
+                        @media(min-width: 650px){
+                            font-size: 23px;
+                        }
+                    }
 
                     }
                     #bites_bttn{
                         background: #f15d22;
+                        cursor: pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
 
                     #kids_name{
                         color:#7c003f;
+                         @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
                     }
                     #kids_bttn{
                         background: #7c003f;
+                        cursor: pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
 
                     #boosts_name{
                         color:#f15d22;
+                         @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 20px;
+                        margin-left: 175px;
+                        margin-top: -150px;
+                    }
 
                     }
                     #boosts_bttn{
                         background: #f15d22;
+                        cursor: pointer;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 50px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
                 .menu_items_name{
                     // border: 1px solid pink;
@@ -180,6 +292,9 @@
                         top: 10px;
                         right: 66px;
                         font-size: 16px;
+                        @media(min-width: 650px){
+                            font-size: 13px;
+                        }
                     }
                     
                     .menu_bttn_img{
@@ -188,6 +303,10 @@
                         position: absolute;
                         right: 16px;
                         top: 6px;
+                        @media(min-width: 650px){
+                            height: 15px;
+                            width: 23px;
+                        }
 
                     }
                 }
@@ -197,6 +316,10 @@
                     position: relative;
                     margin-left: 10px;
                     margin-top: 30px;
+                    @media(min-width: 650px){
+                        height: 150px;
+                        width: 150px;
+                    }
                 }
 
 
@@ -208,7 +331,6 @@
         width: 100%;
         margin-top: 96px;
         img {
-            height: 85px;
             width: 100%;
             padding: 0;
         }
