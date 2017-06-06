@@ -23,4 +23,28 @@ angular.module('app').controller('headerCtrl', function($scope){
         
     })
 
+let menuOpen = false;
+$scope.closeDesktopMenu = function(){
+        $(".desktop_dropdown").css("top", "-5125px")
+        console.log('hi')
+    }
+    
+     $(".menu").click(function(){
+        if(menuOpen){
+            $(".desktop_dropdown").css("top", "-125px")
+            $(".home_main_container").css("padding-top", "0")
+            $(".main_menu_section").css("padding-top", "0")
+            $(".main_smoothie_section").css("padding-top", "0")
+            menuOpen = false;
+        } else {
+            $(".desktop_dropdown").css("top", "73px")
+            $(".home_main_container").css("padding-top", "126px")
+            $(".main_menu_section").css("padding-top", "126px")
+            $(".main_smoothie_section").css("padding-top", "126px")
+            menuOpen = true;
+        }
+
+        
+    })
+
 })

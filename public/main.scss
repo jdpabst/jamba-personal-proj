@@ -176,6 +176,7 @@
             position: absolute;
             top: 10px;
             left: 15px;
+            cursor: pointer;
         }
         .menu_options_desktop{
             width: 46%;
@@ -191,16 +192,36 @@
                     font-size: 14px;
                     font-weight: bold;
                     .menu{
+                        height: 31.5px;
                         color:#C60C46;
+                        cursor: pointer;
+                    }
+                    .menu:hover{
+                        border-bottom: 1.5px solid #C60C46;
                     }
                     .blend {
+                        height: 31.5px;
                         color: #FFC425;
+                        cursor: pointer;
+                    }
+                    .blend:hover{
+                        border-bottom: 1.5px solid #FFC425;
                     }
                     .more{
+                        height: 31.5px;
                         color:#BED600;
+                        cursor: pointer;
+                    }
+                    .more:hover{
+                        border-bottom: 1.5px solid #BED600;
                     }
                     .finder{
+                        height: 31.5px;
                         color:#4aa942;
+                        cursor: pointer;
+                    }
+                    .finder:hover{
+                        border-bottom: 1.5px solid #4aa942;
                     }
             }
         }
@@ -221,6 +242,7 @@
                 position: absolute;
                 right: 4px;
                 top: 2px;
+                cursor: pointer;
             }
         }
         .order_bttn{
@@ -232,6 +254,7 @@
             right: 32px;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
+            cursor: pointer;
             p{
                 color: white;
                 position: absolute;
@@ -243,7 +266,40 @@
                 line-height: 13px;
             }
         }
+       
 }
+    .desktop_dropdown{
+                height: 125px;
+                width: 100%;
+                background:#c60c46;
+                // border: 2px solid black;
+                position: absolute;
+                z-index: 110;
+                top: -125px;
+            
+                
+                .desktop_menu_dropdown{
+                    // border: 2px solid white;
+                    width: 50%;
+                    height: 100%;
+                    position: absolute;
+                    left: 25%;
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                        color: white;
+                        font-family: 'Kreon', serif;
+                        font-size: 15px;
+                        font-weight: bold;
+                        margin-top: 15px;
+                        cursor: pointer;
+                    }
+                    li:hover{
+                        border-bottom: 1px solid white;
+                    }
+                }
+
+        }
 
 .mobile_footer{
     background: #572700;

@@ -2,181 +2,205 @@
     width: 100%;
     background: white;
     position: relative;
-
-    .menu_paragraph{
-        color:#572700;;
-        text-align: center;
-        width: 95%;
-        // border: 2px solid hotpink;
-        margin-left: 3%;
-        margin-bottom: 33px;
-        margin-top: 52px;
-        h1{
-            word-spacing: -6.5px;
+    .main_upper_section_menu{
+        @media(min-width: 650px){
+        max-width: 600px;
+        margin-left: calc(50% - 300px);
         }
-        p {
-            font-size: 16px;
-            line-height: 31px;
+        .menu_paragraph{
+            color:#572700;;
+            text-align: center;
+            width: 95%;
+            // border: 2px solid hotpink;
+            margin-left: 3%;
+            margin-bottom: 33px;
+            margin-top: 52px;
+            @media(min-width: 650px){
+                margin-top: 20px;
+                width: 75%;
+                margin-left: 12.5%; 
+            }
+            h1{
+                word-spacing: -6.5px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 31px;
+                @media(min-width: 650px){
+                    font-size: 14px;
+                }
+                span{
+                    font-size: 22px;
+                    @media(min-width: 650px){
+                    font-size: 18px;
+                }
+
+                }
+            }
         }
-    }
-    .menu_div{
-        width:90%;
-        // border: 2px solid black;
-        margin-left: 20px;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-        font-family: 'Roboto Slab', serif; font-size: 40px;
+        .menu_div{
+            width:90%;
+            // border: 2px solid black;
+            margin-left: 20px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            font-family: 'Roboto Slab', serif; font-size: 40px;
 
-    .menu_items_juice{
-            min-height: 245px;
-            color:#c1d72f;
-            border-top: 0.5px solid #E6E6E6;
-            position: relative;
-
-            .menu_items_name{
-                // border: 1px solid pink;
-                width: 196px;
-                // position: absolute;
-                margin-top: -122px;
-                margin-left: 142px;
-                font-size: 35px;
-                
-            }
-            .menu_see_bttn{
-                height: 38px;
-                width: 151px;
-                border-radius: 3px;
-                background: #c1d72f;
+        .menu_items_juice{
+                min-height: 245px;
+                color:#c1d72f;
+                border-top: 0.5px solid #E6E6E6;
                 position: relative;
-                margin-top: 16px;
-                margin-left: 139px;
-    
-                .menu_see_words{
-                    color: white;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 10px;
-                    right: 66px;
-                    font-size: 16px;
-                }
-                
-                .menu_bttn_img{
-                    height: 21px;
-                    width: 30px;
-                    position: absolute;
-                    right: 16px;
-                    top: 6px;
 
+                .menu_items_name{
+                    border: 1px solid pink;
+                    width: 196px;
+                    // position: absolute;
+                    margin-top: -122px;
+                    margin-left: 142px;
+                    font-size: 35px;
+                    @media(min-width: 650px){
+                        width: 400px;
+                        font-size: 28px;
+                    }
+                    
                 }
-            }
-            .menu_pics{
-                height: 120px;
-                width: 120px;
+                .menu_see_bttn{
+                    height: 38px;
+                    width: 151px;
+                    border-radius: 3px;
+                    background: #c1d72f;
+                    position: relative;
+                    margin-top: 16px;
+                    margin-left: 139px;
+        
+                    .menu_see_words{
+                        color: white;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 10px;
+                        right: 66px;
+                        font-size: 16px;
+                    }
+                    
+                    .menu_bttn_img{
+                        height: 21px;
+                        width: 30px;
+                        position: absolute;
+                        right: 16px;
+                        top: 6px;
+
+                    }
+                }
+                .menu_pics{
+                    height: 120px;
+                    width: 120px;
+                    position: relative;
+                    margin-left: 10px;
+                    margin-top: 30px;
+                }
+
+
+        }
+
+            .menu_items {
+                min-height: 195px;
+                border-top: 0.5px solid #E6E6E6;
                 position: relative;
-                margin-left: 10px;
-                margin-top: 30px;
-            }
 
+                    #bowl_name{
+                        color:#f58025;
 
-    }
-
-        .menu_items {
-            min-height: 195px;
-            border-top: 0.5px solid #E6E6E6;
-            position: relative;
-
-                #bowl_name{
-                    color:#f58025;
-
-                }
-                #bowl_bttn{
-                    background: #f58025;
-                }
-            
+                    }
+                    #bowl_bttn{
+                        background: #f58025;
+                    }
                 
-                #shots_name{
-                    color:#c60c48;
+                    
+                    #shots_name{
+                        color:#c60c48;
 
+                    }
+                    #shots_bttn{
+                        background: #c60c48;
+                    }
+
+                    #menu_smoothies_name{
+                        color:#4aa942;
+
+                    }
+                    #smoothies_bttn{
+                        background: #4aa942;
+                    }
+
+                    #bites_name{
+                        color:#f15d22;
+
+                    }
+                    #bites_bttn{
+                        background: #f15d22;
+                    }
+
+                    #kids_name{
+                        color:#7c003f;
+
+                    }
+                    #kids_bttn{
+                        background: #7c003f;
+                    }
+
+                    #boosts_name{
+                        color:#f15d22;
+
+                    }
+                    #boosts_bttn{
+                        background: #f15d22;
+                    }
+                .menu_items_name{
+                    // border: 1px solid pink;
+                    width: 196px;
+                    // position: absolute;
+                    margin-top: -122px;
+                    margin-left: 142px;
+                    font-size: 35px;
+                    
                 }
-                #shots_bttn{
-                    background: #c60c48;
+                .menu_see_bttn{
+                    height: 38px;
+                    width: 151px;
+                    border-radius: 3px;
+                    position: relative;
+                    margin-top: 16px;
+                    margin-left: 139px;
+        
+                    .menu_see_words{
+                        color: white;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 10px;
+                        right: 66px;
+                        font-size: 16px;
+                    }
+                    
+                    .menu_bttn_img{
+                        height: 21px;
+                        width: 30px;
+                        position: absolute;
+                        right: 16px;
+                        top: 6px;
+
+                    }
+                }
+                .menu_pics{
+                    height: 120px;
+                    width: 120px;
+                    position: relative;
+                    margin-left: 10px;
+                    margin-top: 30px;
                 }
 
-                #menu_smoothies_name{
-                    color:#4aa942;
 
-                }
-                #smoothies_bttn{
-                    background: #4aa942;
-                }
-
-                #bites_name{
-                    color:#f15d22;
-
-                }
-                #bites_bttn{
-                    background: #f15d22;
-                }
-
-                #kids_name{
-                    color:#7c003f;
-
-                }
-                #kids_bttn{
-                    background: #7c003f;
-                }
-
-                #boosts_name{
-                    color:#f15d22;
-
-                }
-                #boosts_bttn{
-                    background: #f15d22;
-                }
-            .menu_items_name{
-                // border: 1px solid pink;
-                width: 196px;
-                // position: absolute;
-                margin-top: -122px;
-                margin-left: 142px;
-                font-size: 35px;
-                
             }
-            .menu_see_bttn{
-                height: 38px;
-                width: 151px;
-                border-radius: 3px;
-                position: relative;
-                margin-top: 16px;
-                margin-left: 139px;
-    
-                .menu_see_words{
-                    color: white;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 10px;
-                    right: 66px;
-                    font-size: 16px;
-                }
-                
-                .menu_bttn_img{
-                    height: 21px;
-                    width: 30px;
-                    position: absolute;
-                    right: 16px;
-                    top: 6px;
-
-                }
-            }
-            .menu_pics{
-                height: 120px;
-                width: 120px;
-                position: relative;
-                margin-left: 10px;
-                margin-top: 30px;
-            }
-
-
         }
     }
 
