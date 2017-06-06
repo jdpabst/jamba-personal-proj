@@ -25,16 +25,17 @@
                 font-size: 40px;
                 margin-bottom: 23px;
                 line-height: 33px;
-                width: 400px;
+                width: 450px;
+                margin-left: calc(50% - 225px);
                 // border: 1.5px solid lime;
                 span{
                      font-size: 55px;
                      @media(min-width: 650px){
-                         font-size: 30px;
+                         font-size: 40px;
                      }
                 }
                 @media(min-width: 650px){
-                    font-size: 30px;
+                    font-size: 35px;
                     width: 450px;
                 }
             }
@@ -64,24 +65,53 @@
             
             .fnv_items{
                 color:#572700;
-            min-height: 205px;
-            //    color: lightseagreen;
-            border-top: 0.5px solid #E6E6E6;
-            position: relative; 
+                min-height: 205px;
+                //    color: lightseagreen;
+                border-top: 0.5px solid #E6E6E6;
+                position: relative; 
+                
             
                     #appleGreens_bttn{
                         background: #f15d22;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 25px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
             
                     #greensGinger_bttn{
                         background: #c60c48;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 25px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
 
                     #upbeet_bttn{
                         background: #4aa942;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 25px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
                     #orangeCarrot_bttn{
                         background: #c1d72f;
+                        @media(min-width: 650px){
+                        position: absolute;
+                        bottom: 25px;
+                        right: 0px;
+                        height: 32px;
+                        width: 130px;
+                    }
                     }
                     
 
@@ -91,11 +121,18 @@
                     // position: absolute;
                     margin-top: -122px;
                     margin-left: 142px;
-                    font-size: 29px;   
+                    font-size: 29px;
+                    @media(min-width: 650px){
+                        width: 350px;
+                        font-size: 25px;
+                        margin-left: 160px;
+                        margin-top: -150px;
+                    }   
             }
 
             .fnv_see_bttn{
-                height: 40px;
+                // border: 2px solid black;
+                    height: 40px;
                     width: 183px;
                     border-radius: 3px;
                     // background: lightseagreen;
@@ -110,6 +147,10 @@
                         top: 12px;
                         right: 66px;
                         font-size: 16px;
+                        @media(min-width: 650px){
+                            font-size: 10px;
+                            right: 55px;
+                        }
                     }
                     
                     .fnv_bttn_img{
@@ -118,6 +159,10 @@
                         position: absolute;
                         right: 22px;
                         top: 8px;
+                        @media(min-width: 650px){
+                            height: 15px;
+                            width: 23px;
+                        }
 
                     }
             .fnv_pics{
@@ -126,6 +171,10 @@
                     position: relative;
                     // margin-left: 10px;
                     margin-top: 30px;
+                    @media(min-width: 650px){
+                        height: 150px;
+                        width: 150px;
+                    }
                 }
             }
         }
@@ -140,6 +189,9 @@
             height: 85px;
             width: 100%;
             padding: 0;
+            @media(min-width: 650px){
+                height: 140px;
+            }
         }
 }
 

@@ -2,6 +2,12 @@
     width: 100%;
     background: white;
     position: relative;
+    
+    .main_upper_upbeet_div{
+        @media(min-width: 650px){
+        max-width: 600px;
+        margin-left: calc(50% - 300px);
+        }
 
     .upbeet_main_paragraph{
         color:#572700;
@@ -11,15 +17,41 @@
         margin-left: 2%;
         margin-bottom: 33px;
         margin-top: 44px;
+        @media(min-width: 650px){
+                margin-top: 20px;
+                width: 75%;
+                margin-left: 12.5%; 
+            }
         .upbeet_header{
             font-size: 40px;
             margin-bottom: 23px;
             line-height: 33px;
+            span{
+                     font-size: 55px;
+                     @media(min-width: 650px){
+                         font-size: 40px;
+                     }
+                }
+                @media(min-width: 650px){
+                    font-size: 35px;
+                    width: 450px;
+                }
         }
         .upbeet_paragraph{
             font-size: 15px;
             line-height: 31px;
+            @media(min-width: 650px){
+                    font-size: 11px;
+                    line-height: 22px;
+                }
         }
+        span{
+                font-size: 22px;
+                @media(min-width: 650px){
+                    font-size: 16px;
+                    }
+
+                }
     }
     .main_upbeet_div{
         // border: 2px solid pink;
@@ -36,55 +68,129 @@
            border-top: 0.5px solid #E6E6E6;
            position: relative; 
            line-height: 27px;
+           @media(min-width: 650px){
+               line-height: 20px;
+           }
 
            .upbeet_pic{
                height: 375px;
                width: 375px;
                margin-top: 28px;
+               margin-left: calc(50% - 187.5px);
+               @media(min-width: 650px){
+                   height: 250px;
+                   width: 250px;
+                   margin-left: 0px;
+                   margin-top: 15px;
+               }
            }
-           .upbeet_name{
-               font-size: 38px;
-               margin-top: 29px;
-               margin-bottom: 20px;
-           }
-           .upbeet_desc{
-               margin-bottom: 50px;
+           .name_desc{
+               @media(min-width: 650px){
+                   max-width: 50%;
+                   position: absolute;
+                   top: 0px;
+                   right: 0px;
+               }
+            .upbeet_name{
+                font-size: 38px;
+                margin-top: 29px;
+                margin-bottom: 20px;
+                line-height: 42px;
+                @media(min-width: 650px){
+                    font-size: 26px;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    line-height: 30px;
+                }
+            }
+            .upbeet_desc{
+                margin-bottom: 50px;
+                @media(min-width: 650px){
+                    font-size: 12px;
+                }
+            }
            }
            .upbeet_ingr{
                width: 100%;
                margin-bottom: 54px;
+               @media(min-width: 650px){
+                   width: 50%;
+                   margin-bottom: 30px;
+               }
                 h1{
                     color:#f58025;
                     font-size: 26px;
-                }
+                    @media(min-width: 650px){
+                        margin-top: 20px;
+                        font-size: 20px;
+                        } 
+                 }
                 .all_ingr_pic{
                     display: flex;
                     justify-content: space-around;
                     .ingr_pic{
                         margin: 10px 30px;
+                        @media(min-width: 650px){
+                            margin: 5px 15px;
+                        }
+                        img{
+                            @media(min-width: 650px){
+                                height: 55px;
+                                width: 55px;
+                            }
+                        }
                     }
                    p{
-                   color: #572700;
-                   font-size: 15px;
-               } 
+                        color: #572700;
+                        font-size: 15px;
+                        @media(min-width: 650px){
+                            font-size: 10px;
+                        }
+                     } 
                 }              
            }
 
            .upbeet_blend{
                margin-bottom: 54px;
+               @media(min-width: 650px){
+                   font-size: 12px;
+                   width: 47%;
+                   margin-bottom: 30px;
+                //    position: absolute;
+                //    right: 0px;
+                //    top: 265px;
+               }
                p{
                 color:#f58025;
                 font-size: 26px;
+                @media(min-width: 650px){
+                        margin-top: 20px;
+                        font-size: 20px;
+                    } 
                 
                }
            }
            .upbeet_diet{
                 margin-bottom: 54px;
+                @media(min-width: 650px){
+                   width: 50%;
+                   margin-bottom: 30px;
+               }
                p{
                     color:#f58025;
                     font-size: 26px;
+                    @media(min-width: 650px){
+                        margin-top: 20px;
+                        font-size: 20px;
+                    } 
+                
                     
                }
+               h2{
+                    @media(min-width: 650px){
+                        font-size: 12px;
+                    }
+                }
             
                }
         }
@@ -99,6 +205,10 @@
                     color:#f58025;
                     font-size: 26px;
                     margin-left: 12px;
+                    @media(min-width: 650px){
+                        margin-top: 20px;
+                        font-size: 20px;
+                        } 
                 }
                    .nutrition_options{
                         position: relative;
@@ -128,6 +238,7 @@
                                 line-height: 43px;
                                 color: #f58024;
                                 border-radius: 2px;
+                                cursor: pointer;
 
                             }
                         .upbeet_medium{
@@ -142,6 +253,7 @@
                                 line-height: 43px;
                                 color: #f58024;
                                 border-radius: 2px;
+                                cursor: pointer;
                             }
                         .upbeet_large{
                                 border-radius: 2px;
@@ -155,6 +267,7 @@
                                 text-align: center;
                                 vertical-align: middle;
                                 line-height: 43px;
+                                cursor: pointer;
 
                             }
                         .upbeet_active{
@@ -205,67 +318,120 @@
         margin-left: 14px;
         width: 93%; 
         font-size: 14px;
+        @media(min-width: 650px){
+            margin-bottom: 30px;
+        }
     }
-    .food_combo{
-        // border: 1px solid gray;
+    .food_combo_main{
+        width: 100%;
+        height: 325px;
+        // border: 2px solid black;
         position: relative;
-        height: 75px;
-        margin-top: 33px;
-        h5{
-            font-family: 'Teko', sans-serif;
-            color: #572700;
-            font-weight: bold;
+        @media(min-width: 650px){
+            width: 50%;
+            border: 0.5px solid #f58025;
             position: absolute;
-            top: 5px;
-            left: 100px;
-            font-size: 28px;
-            
+            right: 0px;
+            top: -400px;
+        }
+        .food_combo{
+            // border: 1px solid gray;
+            position: relative;
+            height: 75px;
+            margin-top: 33px;
+            @media(min-width: 650px){
+                margin-top: 18px;
             }
-        img{
-            position: absolute;
-            top: 9px;
-            left: 43px;
+            h5{
+                font-family: 'Teko', sans-serif;
+                color: #572700;
+                font-weight: bold;
+                position: absolute;
+                top: 5px;
+                left: 90px;
+                font-size: 28px;
+                @media(min-width: 650px){
+                    font-size: 20px;
+                }
+                
+                }
+            img{
+                position: absolute;
+                top: 9px;
+                left: 33px;
+                @media(min-width: 650px){
+                    height: 35px;
+                    left: 38px;
+                }
 
-        }
-    } 
-    .cheddar_twist{
-        // border: 1px solid lightseagreen;
-        width: 95%;
-        height: 226px;
-        margin-top: 16px;
-        img{
-            height: 74px;
+            }
+        } 
+        .cheddar_twist{
+            // border: 1px solid lightseagreen;
+            width: 95%;
+            height: 226px;
             position: absolute;
-            left: 23px;
-        }
-        h1{
-            color:#f58025;
-            font-size: 31px;
-            // border: 1px solid lightcoral;
-            margin-bottom: 20px;
-            width: 268px;
-            margin-left: 31px;
-            float: right;
-        }
-        .cheddar{
-            color: #572700;
-            font-size: 15px;
-            // border: 1px solid lightgreen;
-            line-height: 25px;
-            float: right;
-            width: 268px;
-            margin-left: 31px;
+            top: calc(50% - 85px);
+            left: 2.5%;
+            margin-top: 10px;
+            @media(min-width: 650px){
+                left: 0;
+            }
+            img{
+                height: 74px;
+                position: absolute;
+                left: calc(50% - 190px);
+                @media(min-width: 650px){
+                    height: 65px;
+                    left:calc(50% - 125px);
+                }
+            }
+            h1{
+                color:#f58025;
+                font-size: 31px;
+                // border: 1px solid lightcoral;
+                margin-bottom: 20px;
+                width: 268px;
+                position: absolute;
+                left: calc(50% - 104px);
+                @media(min-width: 650px){
+                    font-size: 20px;
+                    left: calc(50% - 50px);
+                    width: 170px;
+                }
+
+            }
+            .cheddar{
+                margin-top: 0;
+                color: #572700;
+                font-size: 15px;
+                // border: 1px solid lightgreen;
+                line-height: 25px;
+                width: 268px;
+                position: absolute;
+                left: calc(50% - 104px);
+                top: 65px;
+                @media(min-width: 650px){
+                    font-size: 12px;
+                    left: calc(50% - 140px);
+                    top: 70px;
+                    width: 250px;
+                    }
+                }
+            }
         }
     }
 
 .upbeet_order{
-                    width: 100%;
-                    margin-top: 88px;
-                    img {
-                        height: 85px;
-                        width: 100%;
-                        padding: 0;
-                        }
-                    }
+    width: 100%;
+        img {
+            height: 85px;
+            width: 100%;
+            padding: 0;
+            @media(min-width: 650px){
+                height: 130px;
+                }
+            }
+     }
 
 }

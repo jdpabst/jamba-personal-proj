@@ -1,252 +1,258 @@
 <section class="main_upbeet_section">
-    <div class="upbeet_main_paragraph">
-        <h1 class="upbeet_header"><span style="font-family: 'Cabin Sketch', cursive; font-size: 55px;">fruit & veggie</span> </br> SMOOTHIES</h1>
-        <p class="upbeet_paragraph">WITNESS FRUITS AND VEGETABLES LIVING IN <span style="font-family: 'Teko', sans-serif; font-size: 22px;">HARMONY</span>, MAKING BEAUTIFUL MUSIC TOGETHER. WITH TWO SERVINGS OF <span style="font-family: 'Teko', sans-serif; font-size: 22px;">FRUIT</span> AND ONE SERVING OF <span style="font-family: 'Teko', sans-serif; font-size: 22px;">VEGGIES</span> IN EVERY BLENDED-TO-ORDER SMOOTHIE, YOU'LL HAVE A HARD TIME RESISTING THE URGE TO BREAK INTO SONG YOURSELF.</p>
+    <div class="main_upper_upbeet_div">
+        <div class="upbeet_main_paragraph">
+            <h1 class="upbeet_header"><span style="font-family: 'Cabin Sketch', cursive;">fruit & veggie</span> SMOOTHIES</h1>
+            <p class="upbeet_paragraph">WITNESS FRUITS AND VEGETABLES LIVING IN <span style="font-family: 'Teko', sans-serif; ">HARMONY</span>, MAKING BEAUTIFUL MUSIC TOGETHER. WITH TWO SERVINGS OF <span style="font-family: 'Teko', sans-serif; ">FRUIT</span> AND ONE SERVING OF <span style="font-family: 'Teko', sans-serif; ">VEGGIES</span> IN EVERY BLENDED-TO-ORDER SMOOTHIE, YOU'LL HAVE A HARD TIME RESISTING THE URGE TO BREAK INTO SONG YOURSELF.</p>
+        </div>
+        <!--///////////////SMOOTHIE INFO/////////////-->
+    <div class="main_upbeet_div">
+        <div class="upbeet_items">
+
+                <img ng-src="{{upbeet.fnvpic}}" class="upbeet_pic">
+
+            <!--////////////SMOOTHIE NAME///////////////////////-->
+            <div class="name_desc">
+                <div class="upbeet_name">{{upbeet.title}}
+                </div>
+
+            <!--////////////////DESC////////////////////////////-->
+                <div class="upbeet_desc">Beets are back, baby!
+                </br></br>
+                Your grandma wasn’t kidding – beets are good for you. Add in some mixed berry juice, strawberries, blueberries and mangos and you’ve just helped usher in a new era for the beet as the tastiest vegetable in the world. You’re welcome, Nana.</div>
+                </div>
+
+            <!--/////////////////ING PICS/////////////////////////-->
+                <div class="upbeet_ingr">
+                    <h1> Real Whole Fruit & 100% Juice</h1>
+                    <div class="all_ingr_pic">
+                        <div class="ingr_pic">
+                            <img src="./img/blueberries.jpg">
+                            <p>Blueberries</p>
+                        </div>
+
+                        <div class="ingr_pic">
+                            <img src="./img/strawberries.jpg">
+                            <p>Strawberries</p>
+                        </div>
+
+                        <div class="ingr_pic">
+                            <img src="./img/mangos.jpg">
+                            <p>Mangos</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!--//////////////////////BLEND///////////////////////-->
+                <div class="upbeet_blend">
+                    <p>A Blend Of</p>
+                    {{upbeet.blend}}
+                </div>
+
+            <!--//////////DIETARY INFO////////////////////////////-->
+                <div class="upbeet_diet">
+                    <p>Dietary Information</p>
+                    <h2>Non-Dairy</br>
+                    Vegan</br>
+                    Non-Gluten</br>
+                    <span style="font-weight: bold">NO</span> artificial preservatives</br>
+                    <span style="font-weight: bold">NO</span> artificial flavors</br>
+                    <span style="font-weight: bold">NO</span> high fructose corn syrup 
+                    </br><span style="font-weight: bold">0g</span>  trans fat</h2>
+                </div>
+                </div>
     </div>
-    <!--///////////////SMOOTHIE INFO/////////////-->
-<div class="main_upbeet_div">
-    <div class="upbeet_items">
 
-            <img ng-src="{{upbeet.fnvpic}}" class="upbeet_pic">
+    <div class="upbeet_nutrition">
+                    <div class="nutrition_options">
+                        <img src="./img/smoothies.jpg">
+                        <h2>Select option:</h2>
+                        <div class="size_bttns">
+                            <div class="upbeet_small upbeet_active" ng-click="changeNutrition('small')">SMALL</div>
+                            <div class="upbeet_medium" ng-click="changeNutrition('medium')">MEDIUM</div>
+                            <div class="upbeet_large" ng-click="changeNutrition('large')">LARGE</div>
+                        </div>
+                    </div>
+                    <p>Nutritional Facts:</p>
+                    <table class="nutrition_tbl" ng-show="smallTbl">
+                        <tr class="tbl_headers">
+                            <th></th>
+                            <th class="tbl_right">% Daily Value</th>
+                        </tr>
 
-        <!--////////////SMOOTHIE NAME///////////////////////-->
-            <div class="upbeet_name"><span style="line-height: 42px;">{{upbeet.title}}</span>
-            </div>
+                        <tr>
+                            <td class="left_col">Calories 240</td>
+                            <td class="right_col"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Total Fat 1g</td>
+                            <td class="right_col">1%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Saturated Fat 0g</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Trans Fat 0g</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Cholesterol 0mg</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Sodium 140mg</td>
+                            <td class="right_col">6%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Total Carbohydrates 52g</td>
+                            <td class="right_col">17%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Dietray Fiber 9g</td>
+                            <td class="right_col">34%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Sugar 40g</td>
+                            <td class="right_col"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Protein 3g</td>
+                            <td class="right_col"></td>
+                        </tr>
+                    </table>
+                    <ul ng-show="smallTbl">
+                        <li><span style="font-weight: bold">Vitamin A</span>  120%</li>
+                        <li><span style="font-weight: bold">Calcium</span>  10%</li>
+                        <li><span style="font-weight: bold">Vitamin C</span>  120%</li>
+                        <li><span style="font-weight: bold">Iron</span>  10%</li>
+                    </ul>
 
-        <!--////////////////DESC////////////////////////////-->
-            <div class="upbeet_desc">Beets are back, baby!
-             </br></br>
-            Your grandma wasn’t kidding – beets are good for you. Add in some mixed berry juice, strawberries, blueberries and mangos and you’ve just helped usher in a new era for the beet as the tastiest vegetable in the world. You’re welcome, Nana.</div>
+    <!--/////////////////MEDIUM NUTRITION TABLE/////////-->
+    <table class="nutrition_tbl" ng-show="mediumTbl">
+                        <tr class="tbl_headers">
+                            <th></th>
+                            <th class="tbl_right">% Daily Value</th>
+                        </tr>
 
-        <!--/////////////////ING PICS/////////////////////////-->
-            <div class="upbeet_ingr">
-                <h1> Real Whole Fruit & 100% Juice</h1>
-                <div class="all_ingr_pic">
-                    <div class="ingr_pic">
-                        <img src="./img/blueberries.jpg">
-                        <p>Blueberries</p>
+                        <tr>
+                            <td class="left_col">Calories 340</td>
+                            <td class="right_col"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Total Fat 1.5g</td>
+                            <td class="right_col">2%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Saturated Fat 0g</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Trans Fat 0g</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Cholesterol 0mg</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Sodium 230mg</td>
+                            <td class="right_col">10%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Total Carbohydrates 74g</td>
+                            <td class="right_col">25%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Dietray Fiber 13g</td>
+                            <td class="right_col">51%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Sugar 56g</td>
+                            <td class="right_col"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Protein 5g</td>
+                            <td class="right_col"></td>
+                        </tr>
+                    </table>
+                    <ul ng-show="mediumTbl">
+                        <li><span style="font-weight: bold">Vitamin A</span>  190%</li>
+                        <li><span style="font-weight: bold">Calcium</span>  15%</li>
+                        <li><span style="font-weight: bold">Vitamin C</span>  150%</li>
+                        <li><span style="font-weight: bold">Iron</span>  15%</li>
+                    </ul>
+
+    <!--///////////////LARGE NUTRITION INFO/////////////-->
+    <table class="nutrition_tbl" ng-show="largeTbl">
+                        <tr class="tbl_headers">
+                            <th></th>
+                            <th class="tbl_right">% Daily Value</th>
+                        </tr>
+
+                        <tr>
+                            <td class="left_col">Calories 400</td>
+                            <td class="right_col"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Total Fat 1.5g</td>
+                            <td class="right_col">3%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Saturated Fat 0g</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Trans Fat 0g</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Cholesterol 0mg</td>
+                            <td class="right_col">0%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Sodium 280mg</td>
+                            <td class="right_col">12%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Total Carbohydrates 86g</td>
+                            <td class="right_col">29%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Dietray Fiber 15g</td>
+                            <td class="right_col">60%</td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Sugar 65g</td>
+                            <td class="right_col"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_col">Protein 6g</td>
+                            <td class="right_col"></td>
+                        </tr>
+                    </table>
+
+                    <ul ng-show="largeTbl">
+                        <li><span style="font-weight: bold">Vitamin A</span>  220%</li>
+                        <li><span style="font-weight: bold">Calcium</span>  20%</li>
+                        <li><span style="font-weight: bold">Vitamin C</span>  180%</li>
+                        <li><span style="font-weight: bold">Iron</span>  20%</li>
+                    </ul>
+                    <h4>*Percent Daily Values (DV) are based on a 2,000 calorie diet.</h4>
+
+                    <div class="food_combo_main">
+                        <div class="food_combo">
+                            <img src="./img/icon_sub_block_title.png">
+                            <h5>LIKE THIS PRODUCT?</br>IT GOES GREAT WITH:</h5>
+                        </div>
+
+                        <div class="cheddar_twist">
+                            <img src="./img/BakedGood-CheddarTomatoTwist.jpg">
+                            <h1>Cheddar Tomato Twist</h1>
+                            <p class="cheddar">Don't let hungry turn into hangry. Rescue yourself with a soft twist of warm bread and tomato sauce topped with delicious cheddar cheese. No need to thank us, we're just doing our job. But your're welcome.</p>
+                        </div>
                     </div>
 
-                    <div class="ingr_pic">
-                        <img src="./img/strawberries.jpg">
-                        <p>Strawberries</p>
-                    </div>
-
-                    <div class="ingr_pic">
-                        <img src="./img/mangos.jpg">
-                        <p>Mangos</p>
-                    </div>
                 </div>
-            </div>
-
-        <!--//////////////////////BLEND///////////////////////-->
-            <div class="upbeet_blend">
-                <p>A Blend Of</p>
-                {{upbeet.blend}}
-            </div>
-
-        <!--//////////DIETARY INFO////////////////////////////-->
-            <div class="upbeet_diet">
-                <p>Dietary Information</p>
-                <h2>Non-Dairy</br>
-                Vegan</br>
-                Non-Gluten</br>
-                <span style="font-weight: bold">NO</span> artificial preservatives</br>
-                <span style="font-weight: bold">NO</span> artificial flavors</br>
-                <span style="font-weight: bold">NO</span> high fructose corn syrup 
-                </br><span style="font-weight: bold">0g</span>  trans fat</h2>
-            </div>
-             </div>
-</div>
-
-<div class="upbeet_nutrition">
-                <div class="nutrition_options">
-                    <img src="./img/smoothies.jpg">
-                    <h2>Select option:</h2>
-                    <div class="size_bttns">
-                        <div class="upbeet_small upbeet_active" ng-click="changeNutrition('small')">SMALL</div>
-                        <div class="upbeet_medium" ng-click="changeNutrition('medium')">MEDIUM</div>
-                        <div class="upbeet_large" ng-click="changeNutrition('large')">LARGE</div>
-                    </div>
-                </div>
-                <p>Nutritional Facts:</p>
-                <table class="nutrition_tbl" ng-show="smallTbl">
-                    <tr class="tbl_headers">
-                        <th></th>
-                        <th class="tbl_right">% Daily Value</th>
-                    </tr>
-
-                    <tr>
-                        <td class="left_col">Calories 240</td>
-                        <td class="right_col"></td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Total Fat 1g</td>
-                        <td class="right_col">1%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Saturated Fat 0g</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Trans Fat 0g</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Cholesterol 0mg</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Sodium 140mg</td>
-                        <td class="right_col">6%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Total Carbohydrates 52g</td>
-                        <td class="right_col">17%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Dietray Fiber 9g</td>
-                        <td class="right_col">34%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Sugar 40g</td>
-                        <td class="right_col"></td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Protein 3g</td>
-                        <td class="right_col"></td>
-                    </tr>
-                </table>
-                <ul ng-show="smallTbl">
-                    <li><span style="font-weight: bold">Vitamin A</span>  120%</li>
-                    <li><span style="font-weight: bold">Calcium</span>  10%</li>
-                    <li><span style="font-weight: bold">Vitamin C</span>  120%</li>
-                    <li><span style="font-weight: bold">Iron</span>  10%</li>
-                </ul>
-
-<!--/////////////////MEDIUM NUTRITION TABLE/////////-->
-<table class="nutrition_tbl" ng-show="mediumTbl">
-                    <tr class="tbl_headers">
-                        <th></th>
-                        <th class="tbl_right">% Daily Value</th>
-                    </tr>
-
-                    <tr>
-                        <td class="left_col">Calories 340</td>
-                        <td class="right_col"></td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Total Fat 1.5g</td>
-                        <td class="right_col">2%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Saturated Fat 0g</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Trans Fat 0g</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Cholesterol 0mg</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Sodium 230mg</td>
-                        <td class="right_col">10%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Total Carbohydrates 74g</td>
-                        <td class="right_col">25%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Dietray Fiber 13g</td>
-                        <td class="right_col">51%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Sugar 56g</td>
-                        <td class="right_col"></td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Protein 5g</td>
-                        <td class="right_col"></td>
-                    </tr>
-                </table>
-                <ul ng-show="mediumTbl">
-                    <li><span style="font-weight: bold">Vitamin A</span>  190%</li>
-                    <li><span style="font-weight: bold">Calcium</span>  15%</li>
-                    <li><span style="font-weight: bold">Vitamin C</span>  150%</li>
-                    <li><span style="font-weight: bold">Iron</span>  15%</li>
-                </ul>
-
-<!--///////////////LARGE NUTRITION INFO/////////////-->
-<table class="nutrition_tbl" ng-show="largeTbl">
-                    <tr class="tbl_headers">
-                        <th></th>
-                        <th class="tbl_right">% Daily Value</th>
-                    </tr>
-
-                    <tr>
-                        <td class="left_col">Calories 400</td>
-                        <td class="right_col"></td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Total Fat 1.5g</td>
-                        <td class="right_col">3%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Saturated Fat 0g</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Trans Fat 0g</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Cholesterol 0mg</td>
-                        <td class="right_col">0%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Sodium 280mg</td>
-                        <td class="right_col">12%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Total Carbohydrates 86g</td>
-                        <td class="right_col">29%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Dietray Fiber 15g</td>
-                        <td class="right_col">60%</td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Sugar 65g</td>
-                        <td class="right_col"></td>
-                    </tr>
-                    <tr>
-                        <td class="left_col">Protein 6g</td>
-                        <td class="right_col"></td>
-                    </tr>
-                </table>
-
-                <ul ng-show="largeTbl">
-                    <li><span style="font-weight: bold">Vitamin A</span>  220%</li>
-                    <li><span style="font-weight: bold">Calcium</span>  20%</li>
-                    <li><span style="font-weight: bold">Vitamin C</span>  180%</li>
-                    <li><span style="font-weight: bold">Iron</span>  20%</li>
-                </ul>
-                <h4>*Percent Daily Values (DV) are based on a 2,000 calorie diet.</h4>
-
-                <div class="food_combo">
-                    <img src="./img/icon_sub_block_title.png">
-                    <h5>LIKE THIS PRODUCT?</br>IT GOES GREAT WITH:</h5>
-                </div>
-
-                <div class="cheddar_twist">
-                    <img src="./img/BakedGood-CheddarTomatoTwist.jpg">
-                    <h1>Cheddar Tomato Twist</h1>
-                    <p class="cheddar">Don't let hungry turn into hangry. Rescue yourself with a soft twist of warm bread and tomato sauce topped with delicious cheddar cheese. No need to thank us, we're just doing our job. But your're welcome.</p>
-                </div>
-
             </div>
 
 <div class="upbeet_order">

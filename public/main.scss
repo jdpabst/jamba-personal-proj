@@ -317,6 +317,11 @@
             padding: 0 0 25px 0;
             line-height: 30px;
             letter-spacing: 0.5px;
+            @media(min-width: 650px){
+                font-size: 10px;
+                line-height: 20px;
+                width: 120px;
+            }
            
             ul{
                 li{
@@ -332,6 +337,9 @@
             font-weight: bold;
             font-size: 19px;
             padding-bottom: 15px;
+            @media(min-width: 650px){
+                font-size: 13px;
+            }
         }
            .rewards {
             line-height: 18px;
