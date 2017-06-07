@@ -174,6 +174,108 @@
                 margin-bottom: 30px;
             }       
     }
+.harley_div{
+    background-image: url("./img/TexturedBackground.jpg");
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 675px;
+    border: 2px solid pink;
+    .harley_line{
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+        margin-bottom: 35px;
+        display: block;
+        // border: 2px solid pink;
+        img{
+            width: 720px;
+        }
+
+    }
+    .harley_container{
+        width: 900px;
+        left: calc(50% - 450px);
+        position: absolute;
+        bottom: -1px;
+        // border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        .harley_img{
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0;
+            // border: 2px solid black;
+            width: 500px;
+            img{
+                max-width: 100%;
+                height: auto;
+                max-height: 350px;
+                margin-bottom: 0;
+                display: block;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+    }
+
+    .blending_loves{
+        width: 450px;
+        height: 450px;
+        // border: 2px solid black;
+        bottom: -2px;
+        h1{
+            font-size: 42px;
+            color: #572700;
+            font-family: 'Cabin Sketch', cursive;
+            font-weight: bold;
+            margin-bottom: 20px;
+            }
+        p{
+            font-size: 20px;
+            color: #572700;
+            font-family: 'Kreon', serif;
+            width: 90%;
+            line-height: 25px;
+            }
+        .harleys_video{
+            position: absolute;
+            right: 0px;
+            bottom: 60px;
+            // border: 2px solid gray;
+            height: 136px;
+            width: 260px;
+            img{
+                height: 136px;
+                width: 260px;
+            }
+            h2{
+                position:absolute;
+                top: 15px;
+                left: 30px;
+                color: #572700;
+                font-family: 'Kreon', serif;
+                width: 82%;
+                font-size: 16px;
+                line-height: 20px;
+                font-style: italic;
+                font-weight: bold;
+            }
+            h3{
+                position:absolute;
+                bottom: 15px;
+                left: 30px;
+                color: #572700;
+                font-family: 'Cabin Sketch', cursive;
+                font-weight: bold;
+                font-size: 21px;
+            }
+        }
+    }
+}
 
 
 }
