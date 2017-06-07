@@ -5,7 +5,9 @@
     // display: flex;
     // justify-content: space-around;
     position: relative;
+    background: white;
     border-bottom: 1.5px solid lightgray;
+    z-index: 100;
     @media(min-width: 650px){
         display: none;
     }
@@ -168,6 +170,8 @@
     // display: none;
     position: relative;
     border-bottom: 0.5px solid #dbd5d3;
+    z-index: 100;
+    background: white;
     @media(max-width: 650px){
         display:none;
     }

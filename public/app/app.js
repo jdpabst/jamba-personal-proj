@@ -7,6 +7,11 @@ angular.module('app', ['ui.router'])
             templateUrl: './app/routes/home/homeTmpl.html',
             controller: 'homeCtrl'
         })
+        .state('blended', {
+            url: '/blended',
+            templateUrl: './app/routes/blended/blendedTmpl.html',
+            // controller: 'blendedCtrl'
+        })
         .state('map', {
             url: '/store-finder:zip',
             templateUrl: './app/routes/store-finder/finderTmpl.html',
