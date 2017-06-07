@@ -1,4 +1,9 @@
-angular.module('app').controller('fruitnvegCtrl', function($scope, fruitnvegService){
+angular.module('app').controller('fruitnvegCtrl', function($scope, $rootScope, fruitnvegService){
+$rootScope.$on("$routeChangeSuccess", function (event, currentRoute, previousRoute) {
+
+    window.scrollTo(0, 0);
+
+})();
 
     $scope.getFruitnVeg = function(){
         fruitnvegService.getFruitnVeg().then(function(res){
