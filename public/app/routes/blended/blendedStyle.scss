@@ -181,17 +181,20 @@
     margin-right: auto;
     position: relative;
     height: 675px;
-    border: 2px solid pink;
+    border-top: 2px solid #eee;
+    @media(max-width: 575px){
+        height: 1100px;
+         }
     .harley_line{
-        max-width: 650px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 75px;
-        margin-bottom: 35px;
+        max-width: 85%;
+        margin: 75px auto 35px auto;
         display: block;
         // border: 2px solid pink;
         img{
-            width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-width: 100%;
         }
 
     }
@@ -200,23 +203,43 @@
         left: calc(50% - 450px);
         position: absolute;
         bottom: -1px;
-        // border: 2px solid black;
+        // border: 2px solid palevioletred;
         display: flex;
         justify-content: space-around;
+        @media(max-width: 900px){
+            width: 100%;
+            left: 0;
+         }
+         @media(max-width: 575px){
+             flex-direction: column;
+             height: 70%;
+         }
         .harley_img{
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 0;
-            // border: 2px solid black;
+            // border: 2px solid red;
             width: 500px;
+            @media(max-width: 900px){
+                    width: 375px;
+                }
             img{
                 max-width: 100%;
                 height: auto;
-                max-height: 350px;
+                max-height: 370px;
                 margin-bottom: 0;
                 display: block;
                 position: absolute;
                 bottom: 0;
+                @media(max-width: 900px){
+                    max-height: 300px;
+                }
+                @media(max-width: 619px){
+                    max-height: 270px;
+                }
+                @media(max-width: 575px){
+                    max-height: 450px;
+                }
             }
         }
 
@@ -227,12 +250,32 @@
         height: 450px;
         // border: 2px solid black;
         bottom: -2px;
+         @media(max-width: 900px){
+            width: 375px;
+        }
+        @media(max-width: 619px){
+            width: 325px;
+            }
+        @media(max-width: 575px){    
+            position: absolute;
+            bottom: 450px;
+            left: calc(50% - 162.5px);
+        }
         h1{
             font-size: 42px;
             color: #572700;
             font-family: 'Cabin Sketch', cursive;
             font-weight: bold;
             margin-bottom: 20px;
+            @media(max-width: 900px){
+                font-size: 37px;
+                }
+            @media(max-width: 619px){
+                font-size: 30px;
+            }
+            @media(max-width: 575px){
+                font-size: 37px;
+            }
             }
         p{
             font-size: 20px;
@@ -240,6 +283,15 @@
             font-family: 'Kreon', serif;
             width: 90%;
             line-height: 25px;
+            @media(max-width: 900px){
+            font-size: 17px;
+                }
+            @media(max-width: 619px){
+                font-size: 14px;
+            }
+            @media(max-width: 575px){
+                font-size: 17px;
+            }
             }
         .harleys_video{
             position: absolute;
@@ -251,6 +303,14 @@
             img{
                 height: 136px;
                 width: 260px;
+                @media(max-width: 900px){
+                    height: 116;
+                    width: 240px;
+                }
+                @media(max-width: 619px){
+                    height: 106px;
+                    width: 230px;
+                }
             }
             h2{
                 position:absolute;
@@ -263,6 +323,11 @@
                 line-height: 20px;
                 font-style: italic;
                 font-weight: bold;
+                @media(max-width: 619px){
+                font-size: 14px;
+                width: 78%;
+                left: 10px;
+                }
             }
             h3{
                 position:absolute;
@@ -272,16 +337,216 @@
                 font-family: 'Cabin Sketch', cursive;
                 font-weight: bold;
                 font-size: 21px;
+                @media(max-width: 619px){
+                    font-size: 17px;
+                    left: 10px;
+                    bottom: 40px;
+                }
             }
         }
     } 
 
 }
+// /////////////TWITTER/////////////////////////////////////
 .twitter_share{
     max-width: 100%;
-    img{
+    height: 400px;
+    // border: 2px solid violet;
+    position: relative;
+    overflow: hidden;
+    .twitter_img{
+        height: 400px;
+        // border: 2px solid lime;
+        position: relative;
+        @media(min-width: 1432px){
         width: 100%;
-        border: 2px solid lime;
+        }
+    }
+    .twitter_words{
+        width: 300px;
+        position: absolute;
+        left: calc(50% - 150px);
+        top: calc(50% - 100px);
+    }
+}
+////////////////////////SMOOTHIES./////////////////////////
+.blended_smoothies{
+    height: 2000px;
+    position: relative;
+    background: #ffffff;
+    border: 2px solid black;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    .apple{
+        border: 2px solid black;
+        width: 33.333%;
+        height: 70%;
+        .apple_words{
+            // border: 2px solid lime;
+            height: 15%;
+            width: 100%;
+            position: relative;
+            h1{
+                font-size: 35px;
+                color:#572700;
+                font-family: 'Cabin Sketch', cursive;
+                font-weight: bold;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 90px;
+                width: 80%;
+            }
+            p{
+                color:#572700;
+                font-size: 15px;
+                font-family: 'Kreon', serif;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 85%;
+                font-style: italic;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+        .blended_smoothies_img{
+            border: 2px solid pink;
+            height: 60%;
+            width: 85%;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            .blended_ing_img{
+                border: 2px solid lime;
+                width: 92%;
+                position: absolute;
+                top: -90px;
+                left: -40px;
+            }
+            img{
+                width: 100%;
+                height: 75%;
+                border: 2px solid gray;
+            }
+        }
+    }
+    .greens{
+        // border: 2px solid black;
+        width: 33.333%;
+        height: 70%;
+        .green_words{
+            // border: 2px solid lime;
+            height: 15%;
+            width: 100%;
+            position: relative;
+            h1{
+                font-size: 35px;
+                color:#572700;
+                font-family: 'Cabin Sketch', cursive;
+                font-weight: bold;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 90px;
+                width: 80%;
+            }
+            p{
+                color:#572700;
+                font-size: 15px;
+                font-family: 'Kreon', serif;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 85%;
+                font-style: italic;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+        .blended_smoothies_img{
+            // border: 2px solid pink;
+            height: 60%;
+            width: 85%;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            .blended_ing_img{
+                // border: 2px solid lime;
+                width: 92%;
+                position: absolute;
+                top: -90px;
+                left: -40px;
+            }
+            img{
+                width: 100%;
+                height: 75%;
+                // border: 2px solid gray;
+            }
+        }
+    }
+    .pb{
+        // border: 2px solid black;
+        width: 33.333%;
+        height: 70%;
+        .pb_words{
+            // border: 2px solid lime;
+            height: 15%;
+            width: 100%;
+            position: relative;
+            h1{
+                font-size: 35px;
+                color:#572700;
+                font-family: 'Cabin Sketch', cursive;
+                font-weight: bold;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 90px;
+                width: 80%;
+            }
+            p{
+                color:#572700;
+                font-size: 15px;
+                font-family: 'Kreon', serif;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 85%;
+                font-style: italic;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+        .blended_smoothies_img{
+        //    border: 2px solid pink;
+            height: 60%;
+            width: 85%;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            .blended_ing_img{
+                // border: 2px solid lime;
+                width: 92%;
+                position: absolute;
+                top: -90px;
+                left: -40px;
+            }
+            img{
+                width: 100%;
+                height: 75%;
+                // border: 2px solid gray;
+            }
+        }
     }
 }
 

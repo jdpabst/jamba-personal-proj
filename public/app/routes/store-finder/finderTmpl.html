@@ -1,18 +1,28 @@
 <header-dir ui-view="top" autoscroll="true"></header-dir>
 <section class="main_finder_container">
-    <h1 class="finder_text_one">FIND A STORE</h1>
-    <input type="text" ng-model="zipcode">
-    <div class="search_bttn" ui-sref="map({ zip: zipcode })"><img src="./img/searchMOBILE.png"></div>
-    <p class="finder_text_two">International Locations</p>
-    <p class="finder_locations">Locations</p>
-<div class="map">
-    <iframe
-        width="414"
-        height="500"
-        frameborder="0" style="border:0"
-        ng-src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCztgSIq2RPtlaJrwbXrz7jQF7HSX3URTo&q=Jamba+Juice+near+"+{{zip}}>
-    </iframe>
-</div>
+    <div class="finder_input">
+        <div class="finder_input_container">
+            <h1 class="finder_text_one">FIND A STORE</h1>
+            <div class="input_n_bttn">
+                <input type="text" ng-model="zipcode">
+                <div class="search_bttn" ui-sref="map({ zip: zipcode })"><img src="./img/searchMOBILE.png"></div>
+            </div>
+            <p class="finder_text_two">International Locations</p>
+        </div>
+    </div>
+    <div class="finder_map">
+        <div class="finder_map_container">
+            <p class="finder_locations">Locations</p>
+            <div class="map">
+                <iframe
+                    width="1500"
+                    height="800"
+                    frameborder="0" style="border:0"
+                    ng-src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCztgSIq2RPtlaJrwbXrz7jQF7HSX3URTo&q=Jamba+Juice+near+"+{{zip}}>
+                </iframe>
+            </div>
+        </div>
+    </div>
 <div class="finder_order">
     <img src="./img/JAJ_order_ahead_jambaism.jpg">
 </div>
