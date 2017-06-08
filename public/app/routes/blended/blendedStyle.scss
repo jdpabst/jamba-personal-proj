@@ -374,14 +374,14 @@
     height: 2000px;
     position: relative;
     background: #ffffff;
-    border: 2px solid black;
+    // border: 2px solid black;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-around;
     .apple{
-        border: 2px solid black;
+        // border: 2px solid black;
         width: 33.333%;
         height: 70%;
         .apple_words{
@@ -416,14 +416,82 @@
             }
         }
         .blended_smoothies_img{
-            border: 2px solid pink;
+            // border: 2px solid pink;
             height: 60%;
             width: 85%;
             margin-right: auto;
             margin-left: auto;
             position: relative;
+            .blended_smoothies_words{
+                position: absolute;
+                top: 155px;
+                left: calc(50% - 110px);
+                width: 220px;
+                // border: 2px solid lightseagreen;
+                text-align: center;
+                line-height: 30px;
+                h1{
+                    color:#572700;
+                    font-size: 27px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                }
+                h2{
+                    color:#572700;
+                    font-size: 15px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    color:#572700;
+                    font-size: 18px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                }
+                h3{
+                    color:#572700;
+                    font-size: 23px;
+                    font-family: 'Cabin Sketch', cursive;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold; 
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+                .smoothies_bttn{
+                    height: 45px;
+                    width: 250px;
+                    background: #f05b19;
+                    border-radius: 24px;
+                    position: absolute;
+                    margin-left: 15px;
+                    // margin-bottom: -40px;
+                    p{
+                        color: white;
+                        font-size: 23px;
+                        font-family: 'Cabin Sketch', cursive;
+                        font-weight: bold;
+                    }
+                }
+            }
             .blended_ing_img{
-                border: 2px solid lime;
+                // border: 2px solid lime;
                 width: 92%;
                 position: absolute;
                 top: -90px;
@@ -432,7 +500,7 @@
             img{
                 width: 100%;
                 height: 75%;
-                border: 2px solid gray;
+                // border: 2px solid gray;
             }
         }
     }
@@ -478,6 +546,74 @@
             margin-right: auto;
             margin-left: auto;
             position: relative;
+            .blended_smoothies_words{
+                position: absolute;
+                top: 155px;
+                left: calc(50% - 110px);
+                width: 215px;
+                // border: 2px solid lightseagreen;
+                text-align: center;
+                line-height: 30px;
+                h1{
+                    color:#572700;
+                    font-size: 27px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                }
+                h2{
+                    color:#572700;
+                    font-size: 15px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    color:#572700;
+                    font-size: 18px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                }
+                h3{
+                    color:#572700;
+                    font-size: 23px;
+                    font-family: 'Cabin Sketch', cursive;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold; 
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+                .smoothies_bttn{
+                    height: 45px;
+                    width: 250px;
+                    background: #f05b19;
+                    border-radius: 24px;
+                    position: absolute;
+                    margin-left: 15px;
+                    // margin-bottom: -40px;
+                    p{
+                        color: white;
+                        font-size: 23px;
+                        font-family: 'Cabin Sketch', cursive;
+                        font-weight: bold;
+                    }
+                }
+            }
             .blended_ing_img{
                 // border: 2px solid lime;
                 width: 92%;
@@ -534,6 +670,74 @@
             margin-right: auto;
             margin-left: auto;
             position: relative;
+            .blended_smoothies_words{
+                position: absolute;
+                top: 155px;
+                left: calc(50% - 110px);
+                width: 220px;
+                // border: 2px solid lightseagreen;
+                text-align: center;
+                line-height: 30px;
+                h1{
+                    color:#572700;
+                    font-size: 27px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                }
+                h2{
+                    color:#572700;
+                    font-size: 15px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    color:#572700;
+                    font-size: 18px;
+                    font-family: 'Kreon', serif;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold;
+                }
+                h3{
+                    color:#572700;
+                    font-size: 23px;
+                    font-family: 'Cabin Sketch', cursive;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    font-weight: bold; 
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+                .smoothies_bttn{
+                    height: 45px;
+                    width: 250px;
+                    background: #f05b19;
+                    border-radius: 24px;
+                    position: absolute;
+                    margin-left: 15px;
+                    // margin-bottom: -40px;
+                    p{
+                        color: white;
+                        font-size: 23px;
+                        font-family: 'Cabin Sketch', cursive;
+                        font-weight: bold;
+                    }
+                }
+            }
             .blended_ing_img{
                 // border: 2px solid lime;
                 width: 92%;
