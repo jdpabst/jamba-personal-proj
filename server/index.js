@@ -1,6 +1,7 @@
 let express = require('express');
 let bodyParser = require('body-parser');
 let massive = require('massive');
+let config = require('./config.js')
 
 const app = module.exports = express();
 app.use(express.static(__dirname + "./../dist"));
@@ -8,7 +9,7 @@ app.use(express.static(__dirname + "./../dist"));
 app.use(bodyParser.json());
 
 let massiveInstance = massive.connectSync({
-    connectionString: 'postgres://dugaawmtaxzwlp:0d8e24bab13706720368d0b7f30729f3b8e013cf42f045ff25e4afd3459c8587@ec2-54-221-254-72.compute-1.amazonaws.com:5432/dfhqc4rq3omjc5?ssl=true'
+    connectionString: config.connectionString,
 })
 
 app.set('db', massiveInstance);
@@ -26,4 +27,4 @@ app.get('/api/menu/smoothies/fnv/beet', mainCtrl.getBeet);
 
 
 
-app.listen(3000, console.log('listening on port 8000'))
+app.listen(config.port, console.log('listening on ' + config.port))
