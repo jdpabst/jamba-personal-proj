@@ -904,7 +904,7 @@
     }
     .blended_finder_desktop{
         position: absolute;
-        bottom: 900px;
+        bottom: 750px;
         max-width: 50%;
         margin-left: 25%;
         // border: 2px solid black;
@@ -922,12 +922,15 @@
         }
         .input_container{
             position: relative;
-            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 550px;
             // border: 2px solid black;
             input{
                 border-radius: 20px;
                 height: 45px;
-                width: 590px;
+                width: 540px;
                 color: #999999;
                 font-family: 'Kreon', serif;
                 font-size: 20px;
@@ -964,11 +967,76 @@
         width: 100%;
         position: absolute;
         bottom: 0px;
-        img{
+        @media(max-width: 813px){
+            height: 550px;
+            position: relative;
+        }
+        .order_bttn{
+            width: 270px;
+            height: 100px;
+            font-family: 'Kreon', serif;
+            color:#572700;
+            position: absolute;
+            bottom: 60px;
+            left: 147px;
+            // border: 2px solid black;
+             @media(max-width: 814px){
+                left: calc(50% - 135px);
+            }
+            @media(min-width: 1236px){
+                left: calc(50% - 450px);
+            }
+            .order_bttn_img{
+                width: 270px;
+                // border: 2px solid white;
+            }
+            p{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .blended_order_img{
             width: 550px;
-            margin-top: 100px;
+            margin-top: 52px;
             margin-left:20px;
-            display: block
+            display: block;
+            // border: 2px solid white;
+            @media(max-width: 813px){
+                margin-top: 0;
+                position: absolute;
+                top: 120px;
+                left: 20px;
+            }
+             @media(max-width: 814px){
+                margin-left: calc(50% - 275px);
+            }
+            @media(min-width: 1236px){
+                margin-left: calc(50% - 600px);
+            } 
+        }
+        .order_green_container{
+            border: 2px solid black;
+            height: 397px;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            position: absolute;
+            // z-index: -1;
+            bottom: 0;
+            right: 0;
+            width: 46vw;
+            height: 50vw;
+            max-width: 720px;
+            max-height: 600px;
+            background-image: url("./img/order_green_img.png");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            @media(max-width: 814px){
+                display: none;
+            }
         }
     }
 .blended_finder_mobile{
