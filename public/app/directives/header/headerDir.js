@@ -1,7 +1,7 @@
 angular.module('app').directive('headerDir', function(){
     return{
         restrict: "E",
-        templateUrl: "/headerTmpl.html",
+        templateUrl: "/app/directives/header/headerTmpl.html",
         controller: 'headerCtrl'
     }
 })
