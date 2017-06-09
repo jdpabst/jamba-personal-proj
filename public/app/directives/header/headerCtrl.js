@@ -11,12 +11,18 @@ angular.module('app').controller('headerCtrl', function($scope){
             $(".home_main_container").css("padding-top", "0")
             $(".main_menu_section").css("padding-top", "0")
             $(".main_smoothie_section").css("padding-top", "0")
+            $(".main_fnv_section").css("padding-top", "0")
+            $(".main_upbeet_section").css("padding-top", "0")
+            $(".main_blended_section").css("padding-top", "0")
             open = false;
         } else {
             $(".mobile_menu_dropdown").css("top", "59px")
             $(".home_main_container").css("padding-top", "518px")
             $(".main_menu_section").css("padding-top", "518px")
             $(".main_smoothie_section").css("padding-top", "518px")
+            $(".main_fnv_section").css("padding-top", "518px")
+            $(".main_upbeet_section").css("padding-top", "518px")
+            $(".main_blended_section").css("padding-top", "518px")
             open = true;
         }
 
@@ -35,12 +41,18 @@ $scope.closeDesktopMenu = function(){
             $(".home_main_container").css("padding-top", "0")
             $(".main_menu_section").css("padding-top", "0")
             $(".main_smoothie_section").css("padding-top", "0")
+            $(".main_fnv_section").css("padding-top", "0")
+            $(".main_upbeet_section").css("padding-top", "0")
+            $(".main_blended_section").css("padding-top", "0")
             menuOpen = false;
         } else {
             $(".desktop_dropdown").css("top", "73px")
             $(".home_main_container").css("padding-top", "126px")
             $(".main_menu_section").css("padding-top", "126px")
             $(".main_smoothie_section").css("padding-top", "126px")
+            $(".main_fnv_section").css("padding-top", "126px")
+            $(".main_upbeet_section").css("padding-top", "126px")
+            $(".main_blended_section").css("padding-top", "126px")
             menuOpen = true;
         }
 

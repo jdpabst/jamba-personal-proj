@@ -30,6 +30,12 @@
     @media(min-width: 550px){
         height: 390px;
     }
+     @media(min-width: 1100px){
+        height: 450px;
+    }
+    @media(min-width: 1500px){
+        height: 550px;
+    }
 
         .mobile_carousel {
             margin: 0;
@@ -72,10 +78,16 @@
             width: 300%; // # of pics * 100
             height: 100%;
             top: 0;
-
             @media(max-width: 550px){
                 display: none;
             }
+             @media(min-width: 1100px){
+                height: 450px;
+            }
+            @media(min-width: 1500px){
+                height: 550px;
+            }
+
 
                 li {
                     padding: 0;
@@ -86,7 +98,13 @@
                     position: absolute;
                     top: 0;
                     bottom: 0;
-                    // border: 2px solid black;
+                    @media(min-width: 1100px){
+                        height: 450px;
+                    }
+                    @media(min-width: 1500px){
+                        height: 550px;
+                    }
+                                    // border: 2px solid black;
                     
 
                     img {
@@ -97,6 +115,16 @@
                             position: absolute;
                             // top: calc(50% - 193px);
                             left: calc(50% - 330.5px);
+                            @media(min-width: 1100px){
+                                height: 450px;
+                                width: 925px;
+                                left: calc(50% - 462.5px);
+                            }
+                            @media(min-width: 1500px){
+                                height: 550px;
+                                width: 1050px;
+                                left: calc(50% - 525px);
+                            }
                         }
             }
             #yellow{
@@ -120,6 +148,7 @@
     top: 45%;
     left: 10px;
     position: absolute;
+    cursor: pointer;
     .prev {
         position: absolute;
     }  
@@ -135,6 +164,7 @@
     top: 45%;
     right: 10px;
     position: absolute;
+    cursor: pointer;
 
     .next{
         left: -29px;
@@ -153,6 +183,7 @@
     top: 33%;
     left: 10px;
     position: absolute;
+    cursor: pointer;
 
     .prev {
      position: absolute;
@@ -172,6 +203,7 @@
     top: 33%;
     right: 10px;
     position: absolute;
+    cursor: pointer;
 
     .next{
         left: -20px;
@@ -262,6 +294,7 @@ opacity: 1.0;
                 top: 45%;
                 left: 10px;
                 position: absolute;
+                cursor: pointer;
             }
             #food_next{
             overflow: hidden;
@@ -271,9 +304,10 @@ opacity: 1.0;
                 top: 45%;
                 right: -8px;
                 position: absolute;
-
+                cursor: pointer;
                 .food_next{
                     left: -30px;
+                    
                 }
             }
 
@@ -379,12 +413,25 @@ opacity: 1.0;
             @media(min-width:650px){
                 display: block;
             }
+            @media(min-width: 1100px){
+                height: 300px;
+            }
+            @media(min-width: 1500px){
+                height:350px;
+            }
+            
              ul {
                 position: relative;
                 // flex-wrap: wrap;
                 // border: 2px solid green;
                 height: 200px;
                 width: 100%;
+                @media(min-width:650px){
+                display: block;
+                }
+                @media(min-width: 1500px){
+                    height:350px;
+                }
             li {
                 position: relative;
                 width: 33.333%;
@@ -396,6 +443,12 @@ opacity: 1.0;
                     height: 200px;
                     width: 100%;
                     // border: 2px solid black;
+                    @media(min-width: 1100px){
+                        height: 300px;
+                    }
+                    @media(min-width: 1500px){
+                        height:350px;
+                    }
                 }
             .food_container {
                 position: relative;
@@ -469,11 +522,17 @@ opacity: 1.0;
 
 .soccer {
     width: 100%; 
-    height: 374px;
+    height: 500px;
     position: relative;
     //   border: 2px solid black;
     background: url("./img/soccer_img.jpg") center no-repeat;
     background-size: cover;
+    @media(min-width: 1100px){
+        height: 527px;
+    }
+    @media(min-width: 1500px){
+        height: 616px;
+    }
 
     .soccer_div{
         height: 386px;
@@ -485,6 +544,12 @@ opacity: 1.0;
         @media(min-width: 550px){
           left: 10%;
       }
+       @media(min-width: 1100px){
+            height: 425px;
+        }
+        @media(min-width: 1500px){
+            height: 500px;
+        }
   .soccer_words{
       position: absolute;
       top: 60px;
@@ -500,6 +565,7 @@ opacity: 1.0;
       background-color: #c60c48;
       border-radius: 3px;
       text-align: center;
+      cursor: pointer;
      
       
       .soccer_line_one {
@@ -665,10 +731,12 @@ opacity: 1.0;
 
  .product_prev {
      position: absolute;
+     cursor: pointer;
      
  }  
  .product_next {
      position: absolute;
+     cursor: pointer;
  } 
 
 #product_prev {
@@ -747,6 +815,7 @@ opacity: 1.0;
             width: 203px;
         }
         .store_finder_go_bttn {
+            cursor: pointer;
             background-color: #c1d72f;
             height: 39px;
             width: 54px;
