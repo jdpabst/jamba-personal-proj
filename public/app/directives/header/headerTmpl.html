@@ -21,45 +21,47 @@
         
      <!--///////////////////////////////////////MOBILE///////////////////////////////////////////////////-->
      <!--///////////////////////////////////////DESKTOP//////////////////////////////////////////////////////-->
-        <div class="desktop_nav">
-            <img class="main_title" ui-sref ="home" src="./img/jamba_logo_desktop.jpg">
-            <div class="menu_options_desktop">
-                <ul>
-                    <li class="menu">Menu</li>
-                    <li class="blend">Blend in the Good</li>
-                    <li class="more">More Jamba</li>
-                    <li class="finder">Find a Store</li>
-                </ul>
-            </div>
-            <div class="search_desktop">
-                <input type="text" placeholder="Site Search" class="search"/>
-                <img src="./img/icn_primary_search.png">
-            </div>
-            <div class="order_bttn">
-                <p>Order Now!</p>
-            </div>
-        </div>
-        <div class="desktop_dropdown" ng-controller="headerCtrl">
-            <div class="desktop_menu_dropdown">
-                <div>
+        <div class="border_desktop">
+            <div class="desktop_nav">
+                <img class="main_title" ui-sref ="home" src="./img/jamba_logo_desktop.jpg">
+                <div class="menu_options_desktop">
                     <ul>
-                        <li ui-sref="menu" ng-click="closeDesktopMenu()">Menu</li>
-                        <li>Energy Bowls</li>
-                        <li>Shots</li>
+                        <li class="menu">Menu</li>
+                        <li class="blend">Blend in the Good</li>
+                        <li class="more">More Jamba</li>
+                        <li class="finder">Find a Store</li>
                     </ul>
                 </div>
-                <div>
-                    <ul>
-                        <li>Smoothies</li>
-                        <li>Juices</li>
-                        <li>Tasty Bites</li>
-                    </ul>
+                <div class="search_desktop">
+                    <input type="text" placeholder="Site Search" class="search"/>
+                    <img src="./img/icn_primary_search.png">
                 </div>
-                <div>
-                    <ul>
-                        <li>Jamba Kids</li>
-                        <li>Boosts</li>
-                    </ul>
+                <div class="order_bttn">
+                    <p>Order Now!</p>
+                </div>
+            </div>
+            <div class="desktop_dropdown" ng-controller="headerCtrl">
+                <div class="desktop_menu_dropdown">
+                    <div>
+                        <ul>
+                            <li ui-sref="menu" ng-click="closeDesktopMenu()">Menu</li>
+                            <li>Energy Bowls</li>
+                            <li>Shots</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Smoothies</li>
+                            <li>Juices</li>
+                            <li>Tasty Bites</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Jamba Kids</li>
+                            <li>Boosts</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

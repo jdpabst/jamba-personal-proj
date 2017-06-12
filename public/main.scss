@@ -168,113 +168,128 @@
     }
 }
 
-.desktop_nav{
+.border_desktop{
     width: 100%;
-    height: 73px;
-    // display: none;
-    position: relative;
-    border-bottom: 0.5px solid #dbd5d3;
-    z-index: 100;
-    background: white;
-    @media(max-width: 650px){
-        display:none;
-    }
-        .main_title{
-            height: 55px;
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            cursor: pointer;
+    height: 95px;
+    border-bottom: 0.3px solid #dbd5d3;
+    .desktop_nav{
+        width: 100%;
+        height: 95px;
+        // display: none;
+        border-bottom: 0.3px solid #dbd5d3;
+        position: relative;
+        z-index: 100;
+        background: white;
+        @media(max-width: 650px){
+            display:none;
         }
-        .menu_options_desktop{
-            width: 46%;
-            height: 20px;
-            // border: 2px solid hotpink;
-            position: absolute;
-            bottom: 11px;
-            right: 102px;
-                ul{
-                    display: flex;
-                    justify-content: space-around;
-                    font-family: 'Kreon', serif;
-                    font-size: 14px;
-                    font-weight: bold;
-                    .menu{
-                        height: 31.5px;
-                        color:#C60C46;
-                        cursor: pointer;
-                    }
-                    .menu:hover{
-                        border-bottom: 1.5px solid #C60C46;
-                    }
-                    .blend {
-                        height: 31.5px;
-                        color: #FFC425;
-                        cursor: pointer;
-                    }
-                    .blend:hover{
-                        border-bottom: 1.5px solid #FFC425;
-                    }
-                    .more{
-                        height: 31.5px;
-                        color:#BED600;
-                        cursor: pointer;
-                    }
-                    .more:hover{
-                        border-bottom: 1.5px solid #BED600;
-                    }
-                    .finder{
-                        height: 31.5px;
-                        color:#4aa942;
-                        cursor: pointer;
-                    }
-                    .finder:hover{
-                        border-bottom: 1.5px solid #4aa942;
-                    }
-            }
+        @media(min-width: 850px){
+            width: 950px;
+            margin-left: calc(50% - 475px)
         }
-        .search_desktop{
-            position: relative;
-            position: absolute;
-            top: 16px;
-            right: 119px;
-            input{
-                border-top: 0px;
-                border-left: 0px;
-                border-right: 0px;
-                border-bottom: 1px solid #ccc;
-                font-size: 14px;
-            }
-            img{
-                height: 12px;
+        
+            .main_title{
+                height: 72px;
                 position: absolute;
-                right: 4px;
-                top: 2px;
+                top: 10px;
+                left: 15px;
                 cursor: pointer;
+                @media(max-width: 960px){
+                    height: 65px;
+                }
             }
-        }
-        .order_bttn{
-            height: 58px;
-            width: 70px;
-            background: #ef5d21;
-            position: absolute;
-            bottom: 0px;
-            right: 32px;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-            cursor: pointer;
-            p{
-                color: white;
+            .menu_options_desktop{
+                width: 46%;
+                height: 20px;
+                // border: 2px solid hotpink;
                 position: absolute;
-                top: 17px;
-                left: 16px;
-                font-family: 'Teko', sans-serif;
-                letter-spacing: 0.5px;
-                font-size: 17px;
-                line-height: 13px;
+                bottom: 11px;
+                right: 102px;
+                @media(min-width: 690px){
+                    width: 43%
+                }
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        font-family: 'Kreon', serif;
+                        font-size: 16px;
+                        font-weight: bold;
+                        .menu{
+                            height: 31.5px;
+                            color:#C60C46;
+                            cursor: pointer;
+                        .menu:hover{
+                            border-bottom: 1.5px solid #C60C46;
+                        }
+                        .blend {
+                            height: 31.5px;
+                            color: #FFC425;
+                            cursor: pointer;
+                        }
+                        .blend:hover{
+                            border-bottom: 1.5px solid #FFC425;
+                        }
+                        .more{
+                            height: 31.5px;
+                            color:#BED600;
+                            cursor: pointer;
+                        }
+                        .more:hover{
+                            border-bottom: 1.5px solid #BED600;
+                        }
+                        .finder{
+                            height: 31.5px;
+                            color:#4aa942;
+                            cursor: pointer;
+                        }
+                        .finder:hover{
+                            border-bottom: 1.5px solid #4aa942;
+                        }
+                }
             }
-        }
-       
+            .search_desktop{
+                position: relative;
+                position: absolute;
+                top: 16px;
+                right: 119px;
+                input{
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    border-bottom: 1px solid #ccc;
+                    font-size: 14px;
+                }
+                img{
+                    height: 12px;
+                    position: absolute;
+                    right: 4px;
+                    top: 2px;
+                    cursor: pointer;
+                }
+            }
+            .order_bttn{
+                height: 58px;
+                width: 70px;
+                background: #ef5d21;
+                position: absolute;
+                bottom: 0px;
+                right: 32px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                cursor: pointer;
+                p{
+                    color: white;
+                    position: absolute;
+                    top: 17px;
+                    left: 16px;
+                    font-family: 'Teko', sans-serif;
+                    letter-spacing: 0.5px;
+                    font-size: 17px;
+                    line-height: 13px;
+                }
+            }
+        
+    }
 }
     .desktop_dropdown{
                 height: 125px;
