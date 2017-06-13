@@ -14,6 +14,7 @@ angular.module('app').controller('headerCtrl', function($scope){
             $(".main_fnv_section").css("padding-top", "0")
             $(".main_upbeet_section").css("padding-top", "0")
             $(".main_blended_section").css("padding-top", "0")
+            $(".main_finder_container").css("padding-top", "0")
             open = false;
         } else {
             $(".mobile_menu_dropdown").css("top", "59px")
@@ -23,6 +24,7 @@ angular.module('app').controller('headerCtrl', function($scope){
             $(".main_fnv_section").css("padding-top", "518px")
             $(".main_upbeet_section").css("padding-top", "518px")
             $(".main_blended_section").css("padding-top", "518px")
+            $(".main_finder_container").css("padding-top", "518px")
             open = true;
         }
 
@@ -44,15 +46,17 @@ $scope.closeDesktopMenu = function(){
             $(".main_fnv_section").css("padding-top", "0")
             $(".main_upbeet_section").css("padding-top", "0")
             $(".main_blended_section").css("padding-top", "0")
+            $(".main_finder_container").css("padding-top", "0")
             menuOpen = false;
         } else {
-            $(".desktop_dropdown").css("top", "73px")
+            $(".desktop_dropdown").css("top", "95px")
             $(".home_main_container").css("padding-top", "126px")
             $(".main_menu_section").css("padding-top", "126px")
             $(".main_smoothie_section").css("padding-top", "126px")
             $(".main_fnv_section").css("padding-top", "126px")
             $(".main_upbeet_section").css("padding-top", "126px")
             $(".main_blended_section").css("padding-top", "126px")
+            $(".main_finder_container").css("padding-top", "126px")
             menuOpen = true;
         }
 

@@ -127,7 +127,7 @@
         }
         @media(max-width: 434px){
             max-width: 100%;
-            margin-left: 0;
+            margin-left: -15px;
             margin-right: 0;
         }
          .main_blended_header{
@@ -201,6 +201,7 @@
     margin-right: auto;
     position: relative;
     height: 675px;
+    overflow: hidden;
     border-top: 2px solid #eee;
     @media(max-width: 575px){
         height: 1100px;
@@ -223,7 +224,6 @@
         left: calc(50% - 450px);
         position: absolute;
         bottom: -1px;
-        overflow: hidden;
         // border: 2px solid palevioletred;
         display: flex;
         justify-content: space-around;
@@ -264,13 +264,14 @@
             }
         }
 
-    }
+    
 
     .blending_loves{
         width: 450px;
         height: 450px;
         // border: 2px solid black;
-        bottom: -2px;
+        // bottom: -2px;
+        z-index: 100;
          @media(max-width: 900px){
             width: 375px;
         }
@@ -295,6 +296,7 @@
                 font-size: 30px;
             }
             @media(max-width: 575px){
+                margin-left: 10px;
                 font-size: 37px;
             }
             }
@@ -305,12 +307,13 @@
             width: 90%;
             line-height: 25px;
             @media(max-width: 900px){
-            font-size: 17px;
+                font-size: 17px;
                 }
             @media(max-width: 619px){
                 font-size: 14px;
             }
             @media(max-width: 575px){
+                margin-left: 10px;
                 font-size: 17px;
             }
             }
@@ -366,6 +369,7 @@
             }
         }
     } 
+}
 
 }
 // /////////////TWITTER/////////////////////////////////////
