@@ -189,14 +189,25 @@
 .fnv_order{
         width: 100%;
         margin-top: 88px;
+        background: #d6e8f7;
+        overflow: hidden;
         img {
-            height: 85px;
-            width: 100%;
+            width: 900px;
             padding: 0;
-            @media(min-width: 650px){
-                height: 140px;
+            margin-left: calc(50% - 450px);
+            margin-bottom: -3px;
+            @media(max-width: 950px){
+                width: 600px;
+                margin-left: calc(50% - 300px);
+            }
+            @media(max-width: 605px){
+                width: 400px;
+                margin-left: calc(50% - 200px);
+            }
+            @media(max-width: 380px){
+                width: 200px;
+                margin-left: calc(50% - 100px);
             }
         }
 }
-
 
