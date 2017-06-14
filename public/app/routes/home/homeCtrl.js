@@ -37,7 +37,7 @@ if(mq.matches){
         var ul = $('.mobile_carousel')
     }
 
-var slide_count = 3;
+var slide_count = 4;
 var slide_width_pc = 100.0 / slide_count;
 var slide_index = 0;
 

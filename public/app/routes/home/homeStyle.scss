@@ -1,32 +1,33 @@
 .home_main_container{
     background: white;
     position: relative;
+    padding-top: 4px;
     // transition: all 0.2s;
-    .summer_sweepstakes_img{
-    // border: 2px solid black;
-    width: 100%;
-    background: #f8f8f8;
-    border-bottom: 3px solid white;
-    img{
-        width: 100%;
-    }
-    .mobile{
-        @media(min-width: 550px){
-            display: none;
-        }
-    }
-    .desktop{
-        height: 60px;
-        width: 100%;
-        @media(max-width: 550px){
-            display: none; 
-        }
-        @media(min-width: 934px){
-            width: 950px;
-            margin-left: calc(50% - 475px)
-        }
-    }
-}
+//     .summer_sweepstakes_img{
+//     // border: 2px solid black;
+//     width: 100%;
+//     background: #f8f8f8;
+//     border-bottom: 3px solid white;
+//     img{
+//         width: 100%;
+//     }
+//     .mobile{
+//         @media(min-width: 550px){
+//             display: none;
+//         }
+//     }
+//     .desktop{
+//         height: 60px;
+//         width: 100%;
+//         @media(max-width: 550px){
+//             display: none; 
+//         }
+//         @media(min-width: 934px){
+//             width: 950px;
+//             margin-left: calc(50% - 475px)
+//         }
+//     }
+// }
 
     .home_main_carousel {
     width: 100%;
@@ -48,7 +49,7 @@
             padding: 0;
             list-style: none;
             position: absolute;
-            width: 300%; // # of pics * 100
+            width: 400%; // # of pics * 100
             height: 100%;
             top: 0;
 
@@ -59,7 +60,7 @@
                 li {
                     padding: 0;
                     margin: 0;
-                    width: 33.3333%; // 100/5
+                    width: 25%; // 100/5
                     height: 100%;
                     overflow: hidden;
                     position: absolute;
@@ -81,7 +82,7 @@
             padding: 0;
             list-style: none;
             position: absolute;
-            width: 300%; // # of pics * 100
+            width: 400%; // # of pics * 100
             height: 100%;
             top: 0;
             @media(max-width: 550px){
@@ -98,7 +99,7 @@
                 li {
                     padding: 0;
                     margin: 0;
-                    width: 33.3333%; // 100/5
+                    width: 25%; // 100/# pics
                     height: 360px;
                     overflow: hidden;
                     position: absolute;
@@ -141,6 +142,9 @@
             }
             #blue{
                 background: #4fc2cd
+            }
+            #mint{
+                background: #8bc452;
             }
         }
     }
