@@ -1,5 +1,5 @@
     <header>
-        
+        <div id="about" ui-sref="about">About</div>
      <!--///////////////////////////////////////MOBILE///////////////////////////////////////////////////-->
         <div class="mobile_nav" ng-controller="headerCtrl">
             <img class="main_title" src="./img/JambaLogo_mobile.png" ui-sref="home">
@@ -13,7 +13,7 @@
         <input type="text" class="home_site_search" placeholder="Site Search">
         <div class="home_site_search_bttn"><img src="./img/searchMOBILE.png"></div>
         <div class="home_menu"><div class="home_dropmenu_words">Menu & Nutrition</div> <img src="./img/subNav-BG.png" ng-click="closeMobileMenu()" ui-sref="menu"></div>
-        <div class="home_blend"><div class="home_dropmenu_words">Blend In The Good</div> <img src="./img/subNav-BG.png"></div>
+        <div class="home_blend"><div class="home_dropmenu_words" ui-sref="blended">Blend In The Good</div> <img src="./img/subNav-BG.png"></div>
         <div class="home_more"><div class="home_dropmenu_words">More Jamba</div> <img src="./img/subNav-BG.png"></div>
         <div class="home_insider"><div class="home_dropmenu_words">Be A Jamba Insider</div></div>
     </div>
@@ -27,7 +27,7 @@
                 <div class="menu_options_desktop">
                     <ul>
                         <li class="menu">Menu</li>
-                        <li class="blend">Blend in the Good</li>
+                        <li class="blend" ui-sref="blended">Blend in the Good</li>
                         <li class="more">More Jamba</li>
                         <li class="finder">Find a Store</li>
                     </ul>

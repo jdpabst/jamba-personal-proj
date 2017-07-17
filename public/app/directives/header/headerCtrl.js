@@ -15,6 +15,7 @@ angular.module('app').controller('headerCtrl', function($scope){
             $(".main_upbeet_section").css("padding-top", "0")
             $(".main_blended_section").css("padding-top", "0")
             $(".main_finder_container").css("padding-top", "0")
+            $(".main_about_section").css("padding-top", "50px")
             open = false;
         } else {
             $(".mobile_menu_dropdown").css("top", "59px")
@@ -25,6 +26,7 @@ angular.module('app').controller('headerCtrl', function($scope){
             $(".main_upbeet_section").css("padding-top", "518px")
             $(".main_blended_section").css("padding-top", "518px")
             $(".main_finder_container").css("padding-top", "518px")
+            $(".main_about_section").css("padding-top", "518px")
             open = true;
         }
 
@@ -47,6 +49,7 @@ $scope.closeDesktopMenu = function(){
             $(".main_upbeet_section").css("padding-top", "0")
             $(".main_blended_section").css("padding-top", "0")
             $(".main_finder_container").css("padding-top", "0")
+            $(".main_about_section").css("padding-top", "50px")
             menuOpen = false;
         } else {
             $(".desktop_dropdown").css("top", "95px")
@@ -57,6 +60,7 @@ $scope.closeDesktopMenu = function(){
             $(".main_upbeet_section").css("padding-top", "126px")
             $(".main_blended_section").css("padding-top", "126px")
             $(".main_finder_container").css("padding-top", "126px")
+            $(".main_about_section").css("padding-top", "126px")
             menuOpen = true;
         }
 

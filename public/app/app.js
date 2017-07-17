@@ -37,6 +37,10 @@ angular.module('app', ['ui.router'])
             templateUrl: './app/routes/upbeet/upbeetTmpl.html',
             controller: 'upbeetCtrl'
         })
+        .state('about', {
+            url: '/about',
+            templateUrl: './app/routes/about/aboutTmpl.html'
+        })
 
          $urlRouterProvider.otherwise('/')
 })

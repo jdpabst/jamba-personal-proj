@@ -1,0 +1,91 @@
+.main_about_section{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    max-width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #572700;
+
+    .about_title{
+        // border: 1px solid orange;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        h1{
+             font-family: 'Cabin Sketch', cursive;
+             font-size: 60px;
+        }
+    }
+    .about_me_section{
+        // border: 1px solid gray;
+        width: 100%;
+        height: auto;
+        #head_shot{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin: 20px 0 20px 0;
+            margin-left: auto;
+            margin-right: auto;
+            background: url('./../../img/me.jpg') center no-repeat;
+            background-size: cover;
+            // border: 1px solid lime;
+            @media(max-width: 375px){
+                height: 200px;
+                width: 200px;
+            }
+        }
+        p{
+            // font-family: 'Cabin Sketch', cursive;
+            font-family: 'Kreon', serif; 
+            font-weight: 100;
+            font-size: 30px;
+            height: auto;
+            width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            @media(max-width: 676px){
+                width: 400px;
+            }
+            @media(max-width: 500px){
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        ul{
+            padding: 50px 0 20px 0;
+            max-width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: 'Cabin Sketch', cursive;
+            font-weight: bold;
+            
+            li a{
+                color: #572700;
+            }
+            li:nth-child(1) a:hover{
+                cursor:pointer;
+                color: #C60C46;
+                text-decoration: none;
+            }
+            li:nth-child(2) a:hover{
+                cursor:pointer;
+                color: #FFC425;
+                text-decoration: none;
+            }
+            li:nth-child(3) a:hover{
+                cursor:pointer;
+                color: #BED600;
+                text-decoration: none;
+            }
+        }
+    }   
+}
+
